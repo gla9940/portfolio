@@ -1,0 +1,554 @@
+@charset "utf-8";
+
+#wrap {
+  min-width: 320px;
+  font-size: 1.4rem;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+#header.scroll{
+  background-color: rgba(20, 20, 20, 0.7);
+  border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+.inner {
+  margin: 0 40px;
+}
+
+#header h1 a {
+  display: block;
+  line-height: 1.8;
+}
+
+#header h1 img {
+  height: 32px;
+}
+
+
+#header nav {
+  display: none;
+}
+
+.main .m-img {
+  width: 100%;
+  height: 110vh;
+  background: url(../img/visual.jpg)no-repeat center / cover;
+  background-attachment: fixed;
+  z-index: 0;
+  margin-top: -60px;
+}
+
+.main .txt-box {
+  width: 80%;
+  text-align: center;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main .txt-box p {
+  color: #a5a5a5;
+  margin-bottom: 15px;
+}
+
+.main .txt-box h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 2;
+}
+
+.main .txt-box span {
+  color: #E0954B;
+}
+
+.content {
+  position: relative;
+  background-color: #202020;
+  z-index: 9;
+}
+
+.about {
+  position: relative;
+  color: #fff;
+}
+
+.about h2 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.line {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+}
+
+.about .ab-01 {
+  margin-top: 100px;
+}
+
+.about .ab-01-txt {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 50px;
+  font-size: 1.2rem;
+}
+
+
+.about .ab-01 p {
+  text-align: center;
+  width: 290px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.about .ab-01 .pic {
+  max-width: 300px;
+  height: 250px;
+  background-color: #eaeaea;
+  margin: 0 auto;
+}
+
+.about .ab-02 {
+  padding-bottom: 30px;
+}
+
+.about .ab-02>div {
+  margin: 60px 0 50px;
+}
+
+.about .ab-02 .edu-box,
+.about .ab-02 .certi-box {
+  display: flex;
+  align-items: center;
+}
+
+.about .ab-02 .after {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.about .ab-02 .after:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 25px;
+  background-color: #aaa;
+  margin: 0 30px;
+}
+
+.about .ab-02>p {
+  padding: 50px 0;
+}
+
+.about .ab-02 .txt-box {
+  margin: 50px 0;
+
+}
+
+.about .ab-02 span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.skill {
+  position: relative;
+  color: #fff;
+}
+
+.skill h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.skill .design {
+  position: relative;
+  margin-top: 150px;
+}
+
+.skill .design-title,
+.skill .web-title,
+.skill .subtool-title {
+  padding: 0 30px;
+  border-bottom: 1px solid #fff;
+  margin-top: -1px;
+}
+
+.skill .design-title p {
+  width: 115px;
+  font-size: 2.5rem;
+  position: absolute;
+  top: -26px;
+  padding: 0 20px;
+  background-color: #202020;
+}
+
+.skill .design-con,
+.skill .web-con,
+.skill .subtool-con {
+  padding: 100px 40px;
+}
+
+.skill .design-con p,
+.skill .web-con p,
+.skill .subtool-con p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.skill .icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  margin: 0 auto;
+}
+
+.skill .design-con .icon.ps {
+  background-image: url(../img/skill_ps.png);
+}
+
+.skill .design-con .icon.ai {
+  background-image: url(../img/skill_ai.png);
+}
+
+.skill .web-con .icon.html {
+  background-image: url(../img/skill_html.png);
+}
+
+.skill .web-con .icon.css {
+  background-image: url(../img/skill_css.png);
+}
+
+.skill .web-con .icon.vscode {
+  background-image: url(../img/skill_vscode.png);
+}
+
+.skill .web-con .icon.jq {
+  background-image: url(../img/skill_jQuery.png);
+}
+
+.skill .subtool-con .icon.pigma {
+  background-image: url(../img/skill_pigma.png);
+}
+
+.skill .subtool-con .icon.notion {
+  background-image: url(../img/skill_notion.png);
+}
+
+.skill .subtool-con .icon.pr {
+  background-image: url(../img/skill_pr.png);
+}
+
+.skill .subtool-con .icon.ae {
+  background-image: url(../img/skill_ae.png);
+}
+
+.skill .design-con ul,
+.skill .web-con ul,
+.skill .subtool-con ul {
+  display: flex;
+}
+
+.skill .design-con ul li,
+.skill .web-con ul li,
+.skill .subtool-con ul li {
+  width: 120px;
+}
+
+.skill .web{
+  position: relative;
+}
+
+.skill .web-title p {
+  width: 175px;
+  font-size: 2.5rem;
+  position: absolute;
+  top: -26px;
+  padding: 0 20px;
+  background-color: #202020;
+}
+
+.skill .subtool{
+  position: relative;
+}
+
+.skill .subtool-con{
+  border-bottom: 1px solid #fff;
+}
+
+.skill .subtool-title p {
+  width: 125px;
+  font-size: 2.5rem;
+  position: absolute;
+  top: -26px;
+  padding: 0 20px;
+  background-color: #202020;
+}
+
+.index{
+  position: relative;
+  color: #fff;
+  padding: 150px 40px 170px;
+}
+
+.index .index-box01{
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 70px;
+}
+
+.index .index-box01 span{
+  display: inline-block;
+  color: #E0954B;
+}
+
+.index .index-title{
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 30px 0;
+}
+
+.index .index-title span{
+  display: inline-block;
+  width: 4px;
+  height: 15px;
+  background-color: #E0954B;
+  margin-right: 10px;
+}
+
+.index .index-box02 li:not(:first-of-type){
+  margin-left: 40px;
+  padding: 10px 0;
+}
+
+.web{
+  text-align: center;
+  color: #fff;
+}
+
+.web .port-tit{
+  background-color: #070707;
+  padding: 150px;
+}
+
+.web .port-tit h3{
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.web .port-tit p{
+  font-size: 1.8rem;
+  margin-top: 100px;
+}
+
+.web .neopharm{
+  text-align: left;
+  position: relative;
+}
+
+.web .neopharm .img-box{
+  width: 100%;
+  height: 455px;
+  background: url(../img/neopharm_01.jpg)no-repeat left / cover;
+  position: absolute;
+}
+
+.web .txt-box{
+  padding: 130px 0 100px;
+  position: relative;
+}
+
+.web .neopharm .tit{
+  margin: -160px 0 410px;
+  text-align: center;
+}
+
+
+.web .tit h3{
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #6fafc7;
+}
+
+.web .tit h4{
+  font-size: 2.2rem;
+  font-weight: 400;
+  padding: 5px 0 10px;
+}
+
+.web .tit p{
+  font-size: 1rem;
+}
+
+.web .overview{
+  padding: 50px 0;
+}
+
+.web .overview .color{
+  display: inline-block;
+}
+
+.web .overview span{
+ display: block;
+ margin-bottom: 40px;
+ font-size: 1.8rem;
+}
+
+.web .overview p{
+  max-width: 390px;
+}
+
+.web .work>div{
+  padding: 5px 0;
+}
+
+.web .work p{
+  width: 120px;
+  display: inline-block;
+}
+
+.web .work span{
+  white-space: nowrap;
+}
+
+.web .link{
+  margin-top: 50px;
+  padding: 0 30px;
+}
+
+.web .link ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.web .link ul li a{
+  display: block;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 2;
+  transition: all 0.3s;
+}
+
+.web .link ul li:hover a{
+  background-color: #fff;
+  color: #202020;
+}
+
+.web .img-box02{
+  background: url(../img/neopharm_02.png)no-repeat center / cover;
+  height: 300px;
+}
+
+.web .zinus{
+  text-align: left;
+  position: relative;
+}
+
+.web .zinus .img-box{
+  background: url(../img/zinus_01.png)no-repeat center top / cover;
+  height: 400px;
+position: absolute;
+width: 100%;
+top: 230px;
+}
+
+.web .zinus .overview{
+  margin-top: 350px;
+}
+
+.web .zinus .tit{
+  text-align: center;
+}
+
+.web .zinus .tit h3{
+  color: #c0a589;
+}
+
+.web .zinus .img-box02{
+  background: url(../img/zinus_02.jpg)no-repeat center / cover;
+  height: 300px;
+}
+
+
+
+/*네오팜 모달팝업*/
+
+
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1400px) {
+
+
+.skill{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+  .skill .design-con::before,
+  .skill .subtool-con::before{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    border-right: 0;
+    border-radius: 200px 0 0 200px;
+    top: 0;
+    right: 100%;
+  }
+
+  .skill .web-con::before{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    border-left: 0;
+    border-radius: 0 200px 200px 0;
+    top: 0;
+    left: 100%;
+  }
+
+
+
+}
