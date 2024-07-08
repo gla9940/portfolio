@@ -16,7 +16,7 @@
   transition: all 0.5s;
 }
 
-#header.scroll{
+#header.scroll {
   background-color: rgba(20, 20, 20, 0.7);
   border-bottom: 1px solid rgb(88, 88, 88);
 }
@@ -282,7 +282,7 @@
   width: 120px;
 }
 
-.skill .web{
+.skill .web {
   position: relative;
 }
 
@@ -295,11 +295,11 @@
   background-color: #202020;
 }
 
-.skill .subtool{
+.skill .subtool {
   position: relative;
 }
 
-.skill .subtool-con{
+.skill .subtool-con {
   border-bottom: 1px solid #fff;
 }
 
@@ -312,30 +312,30 @@
   background-color: #202020;
 }
 
-.index{
+.index {
   position: relative;
   color: #fff;
   padding: 150px 40px 170px;
 }
 
-.index .index-box01{
+.index .index-box01 {
   text-align: center;
   font-size: 2.8rem;
   margin-bottom: 70px;
 }
 
-.index .index-box01 span{
+.index .index-box01 span {
   display: inline-block;
   color: #E0954B;
 }
 
-.index .index-title{
+.index .index-title {
   font-size: 2rem;
   font-weight: 400;
   padding: 30px 0;
 }
 
-.index .index-title span{
+.index .index-title span {
   display: inline-block;
   width: 4px;
   height: 15px;
@@ -343,112 +343,112 @@
   margin-right: 10px;
 }
 
-.index .index-box02 li:not(:first-of-type){
+.index .index-box02 li:not(:first-of-type) {
   margin-left: 40px;
   padding: 10px 0;
 }
 
-.web{
+.web {
   text-align: center;
   color: #fff;
 }
 
-.web .port-tit{
+.web .port-tit {
   background-color: #070707;
-  padding: 150px;
+  padding: 150px 0;
 }
 
-.web .port-tit h3{
+.web .port-tit h3 {
   font-size: 2.8rem;
   font-weight: 400;
 }
 
-.web .port-tit p{
+.web .port-tit p {
   font-size: 1.8rem;
   margin-top: 100px;
 }
 
-.web .neopharm{
+.web .neopharm {
   text-align: left;
   position: relative;
 }
 
-.web .neopharm .img-box{
+.web .neopharm .img-box {
   width: 100%;
   height: 455px;
   background: url(../img/neopharm_01.jpg)no-repeat left / cover;
   position: absolute;
 }
 
-.web .txt-box{
-  padding: 130px 0 100px;
+.web .txt-box {
+  padding: 100px 0;
   position: relative;
 }
 
-.web .neopharm .tit{
+.web .neopharm .tit {
   margin: -160px 0 410px;
   text-align: center;
 }
 
 
-.web .tit h3{
+.web .tit h3 {
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #6fafc7;
 }
 
-.web .tit h4{
+.web .tit h4 {
   font-size: 2.2rem;
   font-weight: 400;
   padding: 5px 0 10px;
 }
 
-.web .tit p{
+.web .tit p {
   font-size: 1rem;
 }
 
-.web .overview{
-  padding: 50px 0;
+.web .overview {
+  padding: 80px 0 100px;
 }
 
-.web .overview .color{
+.web .overview .color {
   display: inline-block;
 }
 
-.web .overview span{
- display: block;
- margin-bottom: 40px;
- font-size: 1.8rem;
+.web .overview span {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
 }
 
-.web .overview p{
+.web .overview p {
   max-width: 390px;
 }
 
-.web .work>div{
-  padding: 5px 0;
+.web .work>div {
+  padding: 10px 0;
 }
 
-.web .work p{
+.web .work p {
   width: 120px;
   display: inline-block;
 }
 
-.web .work span{
+.web .work span {
   white-space: nowrap;
 }
 
-.web .link{
+.web .link {
   margin-top: 50px;
   padding: 0 30px;
 }
 
-.web .link ul{
+.web .link ul {
   display: flex;
   justify-content: space-between;
 }
 
-.web .link ul li a{
+.web .link ul li a {
   display: block;
   width: 100px;
   height: 30px;
@@ -460,70 +460,574 @@
   transition: all 0.3s;
 }
 
-.web .link ul li:hover a{
+.web .link ul li:hover a {
   background-color: #fff;
   color: #202020;
 }
 
-.web .img-box02{
+.web .img-box02 {
   background: url(../img/neopharm_02.png)no-repeat center / cover;
+  width: 100%;
   height: 300px;
-}
-
-.web .zinus{
-  text-align: left;
+  cursor: pointer;
+  transition: all 0.5s;
   position: relative;
 }
 
-.web .zinus .img-box{
-  background: url(../img/zinus_01.png)no-repeat center top / cover;
-  height: 400px;
-position: absolute;
-width: 100%;
-top: 230px;
+.web .img-box02 .design-system span{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 30px;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 2;
+  transition: all 0.3s;
 }
 
-.web .zinus .overview{
+.web .img-box02:hover span{
+  background-color: #fff;
+  color: #202020;
+}
+
+
+.web .img-box02:hover .dim {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+
+.situation {
+  padding: 100px 0;
+}
+
+.situation p {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+/*네오팜*/
+
+.neopharm p>span {
+  color: #FF1725;
+}
+
+
+.asis-tobe {
+  position: relative;
+}
+
+.asis-tobe .asis h3 {
+  position: absolute;
+  left: -70px;
+  top: -15px;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.asis-tobe h3 span {
+  color: #FF1725;
+}
+
+.asis-tobe .asis {
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 120px;
+  background-color: #fff;
+  color: #888888;
+}
+
+.asis-tobe .asis:before {
+  position: absolute;
+  right: -60px;
+  content: "";
+  display: block;
+  border-left: 60px solid #fff;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+}
+
+.asis-tobe .asis-txt-box {
+  position: absolute;
+  top: 15px;
+  left: 70px;
+}
+
+.asis-tobe .asis-txt-box p {
+  line-height: 2;
+}
+
+.asis-tobe .tobe {
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: 50px auto 0;
+  height: 120px;
+  background-color: #6fafc7;
+  color: #fff;
+  border-left: 60px solid #202020;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+}
+
+.asis-tobe .tobe h3 {
+  position: absolute;
+  right: -85px;
+  top: -75px;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+.asis-tobe .tobe .tobe-txt-box {
+  position: absolute;
+  top: -40px;
+  right: 80px;
+  text-align: right;
+  line-height: 2;
+}
+
+.concept {
+  padding: 100px 0;
+}
+
+.concept p {
+  font-size: 1.8rem;
+}
+
+.concept p>span {
+  color: #FF1725;
+}
+
+.concept .circle-wrap {
+  width: 80%;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.concept .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.concept .circle::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+}
+
+.concept .circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color p {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.color ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.color ul li {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #ff1725;
+  position: relative;
+}
+
+.color ul li:nth-child(2) {
+  background-color: #78C7D2;
+}
+
+.color ul li:nth-child(3) {
+  background-color: #EAEAEA;
+}
+
+.color ul li:nth-child(4) {
+  background-color: #FFFFFF;
+}
+
+.color ul li:not(:first-of-type) {
+  margin-left: -20px;
+}
+
+.color ul li span {
+  position: absolute;
+  display: block;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.font {
+  margin-top: 100px;
+  font-size: 1.8rem;
+}
+
+.font>p {
+  margin-bottom: 30px;
+}
+
+.font p>span {
+  color: #FF1725;
+
+}
+
+.font>div {
+  padding: 10px 0;
+}
+
+.font>div span {
+  display: inline-block;
+  width: 30%;
+}
+
+
+
+
+
+/*지누스*/
+
+.web .zinus {
+  text-align: left;
+  position: relative;
+  background-color: #6a665e;
+  color: #fff;
+}
+
+.web .zinus .img-box {
+  background: url(../img/zinus_01.png) no-repeat center right / cover;
+  height: 380px;
+  position: absolute;
+  width: 100%;
+  top: 215px;
+}
+
+.web .zinus .overview {
   margin-top: 350px;
 }
 
-.web .zinus .tit{
+.web .zinus .tit {
   text-align: center;
 }
 
-.web .zinus .tit h3{
-  color: #c0a589;
+.web .zinus .tit h3 {
+  color: #fff;
 }
 
-.web .zinus .img-box02{
+.web .zinus .img-box02 {
   background: url(../img/zinus_02.jpg)no-repeat center / cover;
   height: 300px;
 }
 
+.zinus .asis-tobe h3 span {
+  color: #E0954B;
+}
+
+.zinus p>span {
+  color: #E0954B;
+}
+
+.zinus .asis-tobe .tobe {
+  background-color: #c0a589;
+
+}
+
+.asis-tobe .tobe {
+  border-left: 60px solid #c0a589;
+}
+
+.zinus .color ul li {
+  background-color: #003628;
+}
+
+.zinus .color ul li:nth-child(2) {
+  background-color: #FF6600;
+}
+
+.zinus .color ul li:nth-child(3) {
+  background-color: #F2F1EF;
+}
+
+.zinus .color ul li:nth-child(4) {
+  background-color: #555555;
+}
+
+/* .gp-design {
+  background-color: #F1E9E2;
+}
+
+.gp-design>div {
+  padding: 80px 0;
+}
+
+.gp-design>div p {
+  text-align: center;
+  padding: 50px 0 100px;
+  font-weight: 600;
+}
+
+.gp-design h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.gp-design .px-width {
+  margin: 0 auto;
+  width: 70%;
+  height: 1px;
+  background-color: #888;
+  position: relative;
+}
+
+.gp-design .px-width::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: #888;
+}
+
+.gp-design .px-width::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: #888;
+}
+
+.gp-design .px-width span {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gp-design .px-height {
+  width: 1px;
+  height: 220px;
+  position: relative;
+  top: 0;
+  left: 87%;
+  background-color: #888;
+}
+
+.gp-design .px-height::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: -4px;
+  background-color: #888;
+}
+
+.gp-design .px-height::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  background-color: #888;
+}
+
+.gp-design .px-height span {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}
+
+
+.gp-design .gp-01 .img-box {
+  margin: 0 auto;
+  margin-top: -210px;
+  width: 70%;
+  height: 210px;
+  background: url(../img/banner01.jpg)no-repeat center / contain;
+} */
+
+
+
 
 
 /*네오팜 모달팝업*/
+.modal-neo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+}
+
+.modal-content {
+  width: 80vw;
+  height: 80vh;
+  background-color: #202020;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content .con-img {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.modal-content .con-img img {
+  width: 100%;
+}
+
+.close {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close:hover {
+  background-color: #fff;
+}
+
+.close:hover span {
+  color: #202020;
+}
+
+.close span {
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/*지누스 모달팝업*/
+.modal-zinus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+}
 
 
 
 @media (min-width: 768px) {
-  
-}
 
-@media (min-width: 1024px) {
+  .main .txt-box p {
+    font-size: 2rem;
+  }
 
-}
+  .main .txt-box h4 {
+    font-size: 2.4rem;
+  }
 
-@media (min-width: 1400px) {
+  .line {
+    height: 40px;
+  }
 
+  .ab-box {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.skill{
-  width: 1000px;
-  margin: 0 auto;
-}
+  .ab-box {
+    padding: 30px;
+  }
+
+  .about .ab-01 {
+    margin-top: 100px;
+    width: 50%;
+  }
+
+  .about .ab-01 .pic {
+    max-width: 350px;
+    height: 300px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+  }
+
+  .about .ab-01 p {
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+
+  .about .ab-01-txt {
+    max-width: 300px;
+    font-size: 1.4rem;
+  }
+
+  .about .ab-02 {
+    width: 41%;
+  }
+
+  .about .ab-02>div {
+    margin: 90px 0 50px;
+  }
+
+  .skill {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .skill .design-con {
+    padding: 70px 40px;
+  }
 
   .skill .design-con::before,
-  .skill .subtool-con::before{
+  .skill .subtool-con::before {
     content: "";
     display: block;
     width: 150px;
@@ -536,7 +1040,7 @@ top: 230px;
     right: 100%;
   }
 
-  .skill .web-con::before{
+  .skill .web-con::before {
     content: "";
     display: block;
     width: 150px;
@@ -548,6 +1052,170 @@ top: 230px;
     top: 0;
     left: 100%;
   }
+
+  .index {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .index>div {
+    width: 40%;
+  }
+
+  .index p {
+    padding-top: 200px;
+    font-size: 3.8rem;
+  }
+
+  .index .index-title {
+    font-size: 2.6rem;
+  }
+
+  .index .index-title span {
+    height: 20px;
+  }
+
+  .index .index-box02 li:not(:first-of-type) {
+    font-size: 1.6rem;
+  }
+
+  .web .neopharm .img-box {
+    height: 100vh;
+    background: url(../img/neopharm_01.jpg) no-repeat left / cover;
+  }
+
+  .web .txt-box {
+    top: 0;
+  }
+
+  .neo-txt-box {
+    margin: -250px 0 50px;
+    width: 70%;
+  }
+
+  .web .txt-box {
+    padding: 100px 0 50px;
+    position: relative;
+  }
+
+  .web .overview p {
+    max-width: 300px;
+  }
+
+  .web .link {
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .web .link ul {
+    width: 350px;
+  }
+
+  .web .img-box02 {
+    height: 80vh;
+  }
+
+  .zinus-txt-box {
+    margin-top: -250px;
+  }
+
+  .web .zinus .img-box {
+    background: url(../img/zinus_01.png)no-repeat center top / cover;
+    height: 530px;
+    position: absolute;
+    width: 100%;
+    top: 170px;
+  }
+
+  .web .zinus .img-box02 {
+    height: 80vh;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+
+  .main .txt-box p {
+    font-size: 2.4rem;
+  }
+
+  .main .txt-box h4 {
+    font-size: 2.8rem;
+  }
+
+  .about h2 {
+    font-size: 3.8rem;
+  }
+
+  .ab-box {
+    padding: 80px;
+  }
+
+  .about .ab-01 .pic {
+    max-width: 500px;
+    height: 400px;
+  }
+
+  .about .ab-01-txt {
+    max-width: 350px;
+    font-size: 1.6rem;
+  }
+
+  .about .ab-01 p {
+    width: 382px;
+    font-size: 1.6rem;
+  }
+
+  .about .ab-02>div {
+    margin: 100px 0 50px;
+  }
+
+  .line {
+    height: 50px;
+  }
+
+  .skill {
+    width: 800px;
+  }
+
+  .skill .design-con {
+    padding: 80px 40px;
+  }
+
+  .web .zinus .img-box {
+    height: 680px;
+  }
+
+
+}
+
+@media (min-width: 1400px) {
+  .inner {
+    margin: 0 100px;
+  }
+
+  .skill {
+    width: 1000px;
+  }
+
+  .skill .design-con {
+    padding: 100px 40px;
+  }
+
+  .web .zinus .img-box {
+    background: url(../img/zinus_01.png) no-repeat center / cover;
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+    top: 160px;
+  }
+
+  .zinus-txt-box {
+    margin-bottom: 100px;
+  }
+
+
 
 
 

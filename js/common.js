@@ -14,5 +14,23 @@ $(document).ready(function () {
 
   });
 
+  $(".modal-neo").hide();
+  $(".neopharm .img-box02").click(function(){
+    $(".modal-neo").show();
+  })
+
+  $(".modal-neo .close").click(function(){
+    $(".modal-neo").hide();
+  })
+
+  $(".modal-zinus").hide();
+  $(".zinus .img-box02").click(function(){
+    $(".modal-zinus").show();
+  })
+
+  $(".modal-zinus .close").click(function(){
+    $(".modal-zinus").hide();
+  })
+
 });
 
