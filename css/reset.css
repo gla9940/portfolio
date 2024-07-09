@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-html{font-size: 10px;}
+html{font-size: 10px;
+  scroll-behavior: smooth;}
 body{text-align: left;font-size:1.6rem;color:#000;line-height:1.4;font-family:'Poppins','Montserrat', sans-serif;font-weight:400;background-color:#fff;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,span,form,fieldset,p,button,address,table, tbody, tfoot, thead, th, tr, td, video {margin:0;padding:0;box-sizing: border-box;}
 header,article,aside,canvas,details,figcaption,figure,footer,hgroup,menu,nav,section,summary,mark {display:block;margin: 0; padding: 0;box-sizing: border-box;}

@@ -12,10 +12,11 @@
   <link rel="stylesheet" href="css/import.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
   <!--js-->
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/common.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -34,13 +35,37 @@
       </div><!--inner-->
     </header>
     <div class="main">
-      <div class="m-img"></div><!--m-img-->
+      <div class="m-img">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(20,20,20,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(20,20,20,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(20,20,20,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#202020" />
+        </g>
+      </svg>
+      </div><!--m-img-->
       <div class="txt-box">
-        <p>HAN GYUNG HYUN PORTFOLIO</p>
-        <h4>안녕하세요.<br>
-          매일매일 배우고 성장하는 <span>웹 퍼블리셔 한경현</span>입니다.</h4>
+        <div class="e">
+          <h3>PORTFOLIO</h3>
+          <h2>My</h2>
+        </div>
+        <p>안녕하세요.</p>
+        <strong class="typing">끊임없이 성장하는 <span>웹 디자이너 한경현</span>입니다.</strong>
       </div>
+    
+      
+    
+      <!--Waves end-->
     </div><!--main-->
+
+    <!--Waves Container-->
+    
+   
     <div class="content">
       <div class="about">
         <div class="inner">
@@ -187,99 +212,142 @@
                 <h4>웹 사이트 리뉴얼</h4>
                 <p>NEOPHARM Web Design Renewal</p>
               </div><!--tit-->
-              <div class="neo-txt-box">
-                <div class="overview">
-                  <span>Overview</span>
-                  <p>네오팜은 화장품 제조업체로 민감피부 스킨케어 전문브랜드입니다. 네오팜의 웹페이지는 디자인요소가 다소 부족해 보이는 심플하고 단순한 구조로 되어있으며, 레이아웃 시스템이 단조로운
-                    느낌을 주고
-                    있습니다. 이러한 단점을 분석하여 웹페이지 리뉴얼 프로젝트를 진행하였습니다.</p>
-                </div><!--overview-->
-                <div class="work">
-                  <div class="date">
-                    <p>프로젝트 기간</p><span>2024.04</span>
-                  </div><!--date-->
-                  <div class="rate">
-                    <p>기여도</p><span>1인 프로젝트 100%</span>
-                  </div><!--rate-->
-                  <div class="program">
-                    <p>프로그램</p><span>HTML, CSS, Jquery, Figma, Photoshop</span>
-                  </div><!--program-->
-                </div><!--work-->
-                <div class="link">
-                  <ul>
-                    <li><a href="https://www.neopharm.co.kr/ko/default.do" target="_blank">Before</a></li>
-                    <li><a
-                        href="https://www.figma.com/design/1aAqqKrU0JEdMYsCL7Fux9/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=0-1&t=yvHfpfDvQIyvVBX0-1"
-                        target="_blank">Figma</a></li>
-                    <li><a href="https://gla9940.github.io/project02/" target="_blank">Web</a></li>
-                  </ul>
-                </div><!--link-->
-              </div><!--neo-txt-box-->
+              <div class="neo-wrap">
+                <div class="neo-txt-box">
+                  <div class="overview">
+                    <span>Overview</span>
+                    <p>네오팜은 화장품 제조업체로 민감피부 스킨케어 전문브랜드입니다. 네오팜의 웹페이지는 디자인요소가 다소 부족해 보이는 심플하고 단순한 구조로 되어있으며, 레이아웃 시스템이
+                      단조로운
+                      느낌을 주고
+                      있습니다. 이러한 단점을 분석하여 웹페이지 리뉴얼 프로젝트를 진행하였습니다.</p>
+                  </div><!--overview-->
+                  <div class="work font-size-14">
+                    <div class="date">
+                      <p>프로젝트 기간</p><span>2024.04</span>
+                    </div><!--date-->
+                    <div class="rate">
+                      <p>기여도</p><span>1인 프로젝트 100%</span>
+                    </div><!--rate-->
+                    <div class="program">
+                      <p>프로그램</p><span>HTML, CSS, Jquery, Figma, Photoshop</span>
+                    </div><!--program-->
+                  </div><!--work-->
+                  <div class="link">
+                    <ul>
+                      <li><button class="button"
+                          onclick="window.open('https://www.neopharm.co.kr/ko/default.do')">Before</button></li>
+                      <li><button class="button"
+                          onclick="window.open('https://www.figma.com/design/1aAqqKrU0JEdMYsCL7Fux9/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=0-1&t=yvHfpfDvQIyvVBX0-1')">Figma</button>
+                      </li>
+                      <li><button class="button"
+                          onclick="window.open('https://gla9940.github.io/project02/')">Web</button></li>
+                    </ul>
+                  </div><!--link-->
+                </div><!--neo-txt-box-->
+              </div><!--neo-wrap-->
             </div><!--inner-->
           </div><!--txt-box-->
-          <div class="img-box02">
-            <div class="dim"></div>
-            <div class="design-system"><span>Design system</span></div>
-          </div>
+          <div class="img-box-wrap">
+            <div class="img-box02">
+              <div class="dim"></div>
+              <div class="design-system">
+                <button class="learn-more">
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text">Design system</span>
+                </button>
+              </div><!--design-system-->
+            </div><!--img-box02-->
+          </div><!--img-box-wrap-->
         </div><!--neopharm-->
         <div class="zinus">
-          <div class="img-box"></div>
-          <div class="txt-box">
-            <div class="inner">
-              <div class="tit">
-                <h3>ZINUS</h3>
-                <h4>웹 사이트 리뉴얼</h4>
-                <p>ZINUS Web Design Renewal</p>
-              </div><!--tit-->
-              <div class="zinus-txt-box">
-              <div class="overview">
-                <span>Overview</span>
-                <p>지누스는 가구 및 매트리스를 판매하는 업체로 다수의 사진 작업물이 고급스럽고 깔끔한 브랜드 이미지에 맞게 심플하고 직관적인 UI를 구축하는 데에 중점을 두고 작업했습니다. 부드럽고
-                  자연스러운 느낌이 날 수 있도록 작업해 고급스러운 이미지를 극대화 시켰습니다.</p>
-              </div><!--overview-->
-              <div class="work">
-                <div class="date">
-                  <p>프로젝트 기간</p><span>2024.05</span>
-                </div><!--date-->
-                <div class="rate">
-                  <p>기여도</p><span>1인 프로젝트 100%</span>
-                </div><!--rate-->
-                <div class="program">
-                  <p>프로그램</p><span>HTML, CSS, Jquery, Figma, Photoshop</span>
-                </div><!--program-->
-              </div><!--work-->
-              <div class="link">
-                <ul>
-                  <li><a href="#">Before</a></li>
-                  <li><a href="#">Figma</a></li>
-                  <li><a href="#">Web</a></li>
-                </ul>
-              </div><!--link-->
-            </div><!--zinus-txt-box-->
+          <div class="dim">
+            <div class="img-box"></div>
+            <div class="txt-box">
+              <div class="inner">
+                <div class="tit">
+                  <h3>ZINUS</h3>
+                  <h4>웹 사이트 리뉴얼</h4>
+                  <p>ZINUS Web Design Renewal</p>
+                </div><!--tit-->
+                <div class="zinus-wrap">
+                  <div class="zinus-txt-box">
+                    <div class="overview">
+                      <span>Overview</span>
+                      <p>지누스는 가구 및 매트리스를 판매하는 업체로 다수의 사진 작업물이 고급스럽고 깔끔한 브랜드 이미지에 맞게 심플하고 직관적인 UI를 구축하는 데에 중점을 두고 작업했습니다.
+                        부드럽고
+                        자연스러운 느낌이 날 수 있도록 작업해 고급스러운 이미지를 극대화 시켰습니다.</p>
+                    </div><!--overview-->
+                    <div class="work">
+                      <div class="date">
+                        <p>프로젝트 기간</p><span>2024.05</span>
+                      </div><!--date-->
+                      <div class="rate">
+                        <p>기여도</p><span>1인 프로젝트 100%</span>
+                      </div><!--rate-->
+                      <div class="program">
+                        <p>프로그램</p><span>HTML, CSS, Jquery, Figma, Photoshop</span>
+                      </div><!--program-->
+                    </div><!--work-->
+                    <div class="link">
+                      <ul>
+                        <li><button class="button bz"
+                            onclick="window.open('https://www.neopharm.co.kr/ko/default.do')">Before</button></li>
+                        <li><button class="button bz"
+                            onclick="window.open('https://www.figma.com/design/1aAqqKrU0JEdMYsCL7Fux9/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=0-1&t=yvHfpfDvQIyvVBX0-1')">Figma</button>
+                        </li>
+                        <li><button class="button bz"
+                            onclick="window.open('https://gla9940.github.io/project02/')">Web</button></li>
+                      </ul>
+                    </div><!--link-->
+                  </div><!--zinus-txt-box-->
+                </div><!--zinus-wrap-->
 
 
-            </div><!--inner-->
-          </div><!--txt-box-->
-          <div class="img-box02">
-            <div class="dim"></div>
-            <div class="design-system"><span>Design system</span></div>
-          </div>
+              </div><!--inner-->
+            </div><!--txt-box-->
+            <div class="img-box-wrap">
+              <div class="img-box02">
+                <div class="dim"></div>
+                <div class="design-system">
+                  <button class="learn-more bz">
+                    <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text bz">Design system</span>
+                  </button>
+                </div>
+              </div>
+            </div><!--img-box02-->
+          </div><!--img-box-wrap-->
         </div><!--zinus-->
-      </div><!--web-->      
+      </div><!--web-->
+      <div class="design-wrap">
+        <div class="dim">
+          <div class="tit"><span>D</span>esign</div><!--tit-->
+          <div class="gp-design">
+            <div class="banner01"></div>
+            <div class="banner02"></div>
+          </div><!--gp-design-->
+        </div><!--dim-->
+      </div><!--design-wrap-->
+
     </div><!--content-->
-    <div class="modal-neo">
+    <div class="modal-neo layer_pop">
       <div class="modal-content">
         <div class="con-img"><img src="img/modal_neopharm.jpg" alt="네오팜팝업"></div>
         <div class="close"><span>Close</span></div><!--close-->
       </div><!--content-->
     </div><!--modal-neo-->
-    <div class="modal-zinus">
+    <div class="modal-zinus layer_pop">
       <div class="modal-content">
         <div class="con-img"><img src="img/modal_zinus.jpg" alt="네오팜팝업"></div>
         <div class="close"><span>Close</span></div><!--close-->
       </div><!--content-->
     </div><!--modal-zinus-->
   </div><!--#wrap-->
+
 </body>
 
 </html>
