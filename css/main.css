@@ -39,130 +39,6 @@
   display: none;
 }
 
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
-  bottom: -95vh;
-}
-
-
-/* Animation */
-
-.parallax>use {
-  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-}
-
-.parallax>use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-
-.parallax>use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallax>use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallax>use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
-
-.e {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.e h3 {
-  font-size: 4rem;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  color: #E0954B;
-  letter-spacing: 0px;
-  transition: 1s;
-  -webkit-transition: 1s;
-  -ms-transition: 1s;
-  position: relative;
-  padding: 10px;
-}
-
-.e h3:before,
-.e h3:after {
-  content: "";
-  position: absolute;
-  height: 7px;
-  width: 0px;
-  background: #E0954B;
-  transition: 300ms;
-  -webkit-transition: 1s;
-  -ms-transition: 1s;
-  opacity: 0.3;
-  left: 50%;
-}
-
-.e h3:before {
-  bottom: 0;
-
-}
-
-.e h3:after {
-  top: 0;
-
-}
-
-.e h3:hover {
-  letter-spacing: 8px;
-}
-
-.e h3:hover:before,
-.e h3:hover:after {
-  width: 95%;
-  opacity: 1;
-  left: 0;
-
-}
-
-.e h3:hover~h2 {
-  opacity: 0;
-}
-
-.e h2 {
-  color: #fff;
-  font-family: 'Pinyon Script', cursive;
-  text-align: center;
-  font-size: 7rem;
-  font-weight: 100;
-  bottom: 40px;
-  position: absolute;
-  transition: 1s;
-  -webkit-transition: 1s;
-  -ms-transition: 1s;
-  opacity: 0.1;
-  width: 100%;
-}
-
 .main .m-img {
   width: 100%;
   height: 110vh;
@@ -176,26 +52,20 @@
   width: 80%;
   text-align: center;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.main .txt-box .intro {
-  position: absolute;
-  bottom: 0;
 }
 
 .main .txt-box p {
   color: #a5a5a5;
   margin-bottom: 15px;
   font-size: 1.6rem;
-  margin-top: 300px;
 }
 
-.main .txt-box strong,
-.main .txt-box p {
-  font-size: 1.4rem;
+.main .txt-box h4,
+.main .txt-box strong {
+  font-size: 2.8rem;
   font-weight: 400;
   color: #fff;
   line-height: 2;
@@ -206,8 +76,8 @@
 }
 
 .typing {
-  width: 38ch;
-  animation: typing 3s steps(30), blink .5s step-end infinite alternate;
+  width: 45ch;
+  animation: typing 3s steps(45), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -221,7 +91,7 @@
 }
 
 @keyframes blink {
-  50% {
+  100% {
     border-color: transparent;
   }
 }
@@ -475,18 +345,6 @@
   padding: 150px 40px 170px;
 }
 
-.index:before {
-  content: "";
-  position: absolute;
-  left: -150%;
-  top: 0;
-  width: 300%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  transform: rotate(45deg);
-  z-index: -1;
-}
-
 .index .index-box01 {
   text-align: center;
   font-size: 2.8rem;
@@ -520,28 +378,6 @@
 .web {
   text-align: center;
   color: #fff;
-  position: relative;
-  width: 100%;
-}
-
-.web .web-tit {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-  z-index: 9;
-  display: flex;
-  align-items: center;
-}
-
-.web .web-tit h2 {
-  color: #fff;
-  font-size: 6rem;
-}
-
-.web .web-tit p {
-  color: #fff;
-  font-size: 3rem;
 }
 
 .web .port-tit {
@@ -564,11 +400,10 @@
   position: relative;
 }
 
-
 .web .neopharm .img-box {
   width: 100%;
   height: 455px;
-  background: url(../img/neopharm_bg.jpg)no-repeat left / cover;
+  background: url(../img/neopharm_01.jpg)no-repeat left / cover;
   position: absolute;
 }
 
@@ -590,13 +425,13 @@
 }
 
 .web .tit h4 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 400;
   padding: 5px 0 10px;
 }
 
 .web .tit p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .web .overview {
@@ -654,33 +489,40 @@
 }
 
 .web .img-box02 {
-  height: 40vh;
-}
-
-.web .img-box-wrap {
-  overflow: hidden;
+  background: url(../img/neopharm_02.png)no-repeat center / cover;
   width: 100%;
-}
-
-.web .img-box02 {
-  background: url(../img/neopharm_pop.png)no-repeat center;
-  background-size: 100%;
-  transition: background-size .3s ease;
+  height: 50vh;
   cursor: pointer;
   transition: all 0.5s;
   position: relative;
-  transform: scale(1);
 }
 
-.web .img-box02:hover {
-  background-size: 110%;
+.web .img-box02 .design-system span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 30px;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 2;
+  transition: all 0.3s;
 }
+
+.web .img-box02:hover span {
+  background-color: #fff;
+  color: #202020;
+}
+
 
 .web .img-box02:hover .dim {
   width: 100%;
   height: 100%;
   background-color: rgba(20, 20, 20, 0.5);
-  transition: all 0.5s;
 }
 
 .situation {
@@ -691,256 +533,6 @@
   font-size: 1.8rem;
   margin-bottom: 30px;
 }
-
-/*버튼 css*/
-
-.button.bz {
-  --color: #fff;
-  --color-hover: var(--color);
-  --background: #938578;
-  --background-hover: var(--background);
-  --hover-back: #cba47c;
-  --hover-front: #b99e84;
-}
-
-.button.pp {
-  --color: #202020;
-    --color-hover: #fff;
-    --background: #fff;
-    --background-hover: var(--background);
-    --hover-back: #574fa7;
-    --hover-front: #625ab8;
-}
-
-.button {
-  --color: #fff;
-  --color-hover: var(--color);
-  --background: #414246;
-  --background-hover: var(--background);
-  --hover-back: #467281;
-  --hover-front: #6fafc7;
-  padding: 8px 28px;
-  border-radius: 20px;
-  line-height: 24px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: .02em;
-  border: none;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  color: var(--c, var(--color));
-  background: var(--b, var(--background));
-  transition: color .2s linear var(--c-d, .2s), background .3s linear var(--b-d, .2s);
-
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    background: var(--pb, var(--hover-back));
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 200%;
-    border-radius: var(--br, 40%);
-    transform: translateY(var(--y, 50%));
-    transition: transform var(--d, .4s) ease-in var(--d-d, 0s), border-radius .5s ease var(--br-d, .08s);
-  }
-
-  &:after {
-    --pb: var(--hover-front);
-    --d: .44s;
-  }
-
-  div {
-    z-index: 1;
-    position: relative;
-    display: flex;
-
-    span {
-      display: block;
-      backface-visibility: hidden;
-      transform: translateZ(0);
-      animation: var(--name, none) .7s linear forwards .18s;
-    }
-  }
-
-  &.in {
-    --name: move;
-
-    &:not(.out) {
-      --c: var(--color-hover);
-      --b: var(--background-hover);
-
-      &:before,
-      &:after {
-        --y: 0;
-        --br: 5%;
-      }
-
-      &:after {
-        --br: 10%;
-        --d-d: .02s;
-      }
-    }
-
-    &.out {
-      --name: move-out;
-
-      &:before {
-        --d-d: .06s;
-      }
-    }
-  }
-}
-
-@keyframes move {
-
-  30%,
-  36% {
-    transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
-  }
-
-  50% {
-    transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
-  }
-
-  70% {
-    transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
-  }
-}
-
-@keyframes move-out {
-
-  30%,
-  36% {
-    transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
-  }
-
-  50% {
-    transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
-  }
-
-  70% {
-    transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
-  }
-}
-
-/*버튼2 CSS*/
-
-button.learn-more.bz .circle {
-  background-color: #ff8816;
-}
-
-button.learn-more.bz .button-text {
-  color: #ff8816;
-}
-
-button:hover .button-text.bz {
-  color: #fff;
-}
-
-.design-system {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.learn-more {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  background: transparent;
-  padding: 0;
-  font-size: inherit;
-  font-family: inherit;
-}
-
-button.learn-more {
-  width: 20.8rem;
-  height: auto;
-}
-
-button.learn-more .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 4.8rem;
-  height: 4.8rem;
-  background: #78c7d2;
-  border-radius: 2.275rem;
-}
-
-button.learn-more .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
-}
-
-button.learn-more .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.875rem;
-  width: 1.575rem;
-  height: 0.175rem;
-  background: none;
-}
-
-button.learn-more .circle .icon.arrow::before {
-  position: absolute;
-  content: '';
-  top: -0.35rem;
-  right: 0.0875rem;
-  width: 0.875rem;
-  height: 0.875rem;
-  border-top: 0.175rem solid #fff;
-  border-right: 0.175rem solid #fff;
-  transform: rotate(45deg);
-}
-
-button.learn-more .button-text {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1.05rem 0;
-  margin: 0 0 0 2.59rem;
-  color: #78c7d2;
-  font-weight: 700;
-  line-height: 1.8;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-button:hover .circle {
-  width: 100%;
-}
-
-button:hover .circle .icon.arrow {
-  background: #fff;
-  transform: translate(1.4rem, 0);
-}
-
-button:hover .button-text {
-  color: #fff;
-}
-
-
-
-
 
 /*네오팜*/
 
@@ -1150,24 +742,22 @@ button:hover .button-text {
   position: relative;
   background: url(../img/bg3.jpg)no-repeat center / cover;
   color: #fff;
-  transition: all 0.5s;
 }
 
-.web .zinus .dim {
+.web .zinus .dim{
   background-color: rgb(79 58 38 / 40%);
-  transition: all 0.5s;
 }
 
 .web .zinus .img-box {
-  background: url(../img/zinus_bg.png) no-repeat center / cover;
-  height: 440px;
-  position: absolute;
-  width: 115%;
-  top: 160px;
-  left: -135px;
+  background: url(../img/zinus_01.png) no-repeat center / cover;
+    height: 440px;
+    position: absolute;
+    width: 115%;
+    top: 160px;
+    left: -135px;
 }
 
-.zinus-txt-box {
+.zinus-txt-box{
   margin-top: 350px;
 }
 
@@ -1181,12 +771,8 @@ button:hover .button-text {
 }
 
 .web .zinus .img-box02 {
-  background: url(../img/zinus_pop.jpg)no-repeat center;
-  background-size: 100%;
-}
-
-.web .zinus .img-box02:hover {
-  background-size: 110%;
+  background: url(../img/zinus_02.jpg)no-repeat center / cover;
+  height: 50vh;
 }
 
 .zinus .asis-tobe h3 span {
@@ -1222,14 +808,13 @@ button:hover .button-text {
   background-color: #555555;
 }
 
-.design-wrap {
+.design-wrap{
   background: url(../img/bg3.jpg)no-repeat center / cover;
 }
 
-.design-wrap .dim {
+.design-wrap .dim{
   background-color: rgb(50 50 50 / 40%);
 }
-
 
 .design-wrap .tit {
   font-size: 3.8rem;
@@ -1334,41 +919,6 @@ button:hover .button-text {
   height: 60vh;
 }
 
-.team-project {
-  color: #fff;
-}
-
-.tp-tit {
-  font-size: 3rem;
-  font-weight: 400;
-  padding-top: 100px;
-}
-
-.zep {
-  background:
-  linear-gradient(#4c3ed9, transparent), linear-gradient(to top left, #9709b5, transparent), linear-gradient(to top right, #1780b5, transparent);
-  background-blend-mode: luminosity;
-  position: relative;
-}
-
-.zep .img-box {
-  background: url(../img/zep_bg.png)no-repeat center / 100%;
-  height: 50vh;
-  width: 70%;
-  position: absolute;
-  top: 330px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.zep .overview {
-  padding: 450px 0 100px;
-}
-
-.zep .txt-box {
-  text-align: left;
-}
-
 
 
 @media (min-width: 768px) {
@@ -1377,11 +927,9 @@ button:hover .button-text {
     font-size: 2rem;
   }
 
-  .main .txt-box h4,
-  .main .txt-box strong {
+  .main .txt-box h4 {
     font-size: 2.4rem;
   }
-
 
   .line {
     height: 40px;
@@ -1491,8 +1039,8 @@ button:hover .button-text {
   }
 
   .web .neopharm .img-box {
-    height: 102vh;
-    background: url(../img/neopharm_bg.jpg) no-repeat left / cover;
+    height: 101vh;
+    background: url(../img/neopharm_01.jpg) no-repeat left / cover;
   }
 
   .web .txt-box {
@@ -1548,20 +1096,24 @@ button:hover .button-text {
   }
 
   .web .img-box02 {
-    height: 47vh;
+    height: 80vh;
   }
 
   .zinus-txt-box {
-    width: 30%;
+    width: 40%;
   }
 
   .web .zinus .img-box {
-    background: url(../img/zinus_bg.png)no-repeat center top / cover;
+    background: url(../img/zinus_01.png)no-repeat center top / cover;
     height: 530px;
     position: absolute;
     width: 100%;
     top: 170px;
     left: 0;
+  }
+
+  .web .zinus .img-box02 {
+    height: 80vh;
   }
 
   .zinus .inner {
@@ -1576,9 +1128,8 @@ button:hover .button-text {
     height: 80vh;
   }
 
-  .zinus-txt-box {
+  .zinus-txt-box{
     margin-top: 0;
-    padding-top: 100px;
   }
 
   .web .overview span {
@@ -1593,9 +1144,7 @@ button:hover .button-text {
     font-size: 1.2rem;
   }
 
-
 }
-
 
 @media (min-width: 1024px) {
 
@@ -1603,8 +1152,7 @@ button:hover .button-text {
     font-size: 2.4rem;
   }
 
-  .main .txt-box h4,
-  .main .txt-box strong {
+  .main .txt-box h4 {
     font-size: 2.8rem;
   }
 
@@ -1663,11 +1211,7 @@ button:hover .button-text {
   }
 
   .web .overview {
-    padding: 50px 0 100px;
-  }
-
-  .web .img-box02 {
-    height: 62vh;
+    padding: 100px 0 100px;
   }
 
 
@@ -1687,7 +1231,7 @@ button:hover .button-text {
   }
 
   .web .zinus .img-box {
-    background: url(../img/zinus_bg.png) no-repeat center / cover;
+    background: url(../img/zinus_01.png) no-repeat center / cover;
     height: 90vh;
     position: absolute;
     width: 100%;
@@ -1727,15 +1271,11 @@ button:hover .button-text {
   }
 
   .zinus-txt-box {
-    width: 25%;
+    width: 30%;
   }
 
   .zinus-wrap {
     height: 90vh;
-  }
-
-  .web .img-box02 {
-    height: 82vh;
   }
 
 
