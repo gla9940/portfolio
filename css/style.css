@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+
 #wrap {
   min-width: 320px;
   font-size: 1.4rem;
@@ -49,6 +51,53 @@
   max-height: 150px;
   bottom: -95vh;
 }
+
+/*drag cursor*/
+#cursor {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+  mix-blend-mode: exclusion;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor__circle {
+    width: 0;
+    height: 0;
+    margin-top: -50%;
+    margin-left: -50%;
+    border-radius: 50%;
+    transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  #cursor.arrow .cursor__circle {
+    width: 64px;
+    height: 64px;
+    background-color: #ffffff;
+  }
+
+  #cursor.arrow::after {
+    width: 64px;
+    height: 64px;
+    content: 'Drag';
+    text-align: center;
+    position: absolute;
+    font-weight: 600;
+    left: -50%;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
 
 
 /* Animation */
@@ -535,8 +584,10 @@
 }
 
 .web .web-tit h2 {
-  color: #fff;
+  color: #2b2b2b;
   font-size: 6rem;
+  font-family: 'Muli', 'sans-serif';
+  font-weight: 900;
 }
 
 .web .web-tit p {
@@ -705,11 +756,11 @@
 
 .button.pp {
   --color: #202020;
-    --color-hover: #fff;
-    --background: #fff;
-    --background-hover: var(--background);
-    --hover-back: #574fa7;
-    --hover-front: #625ab8;
+  --color-hover: #fff;
+  --background: #fff;
+  --background-hover: var(--background);
+  --hover-back: #574fa7;
+  --hover-front: #625ab8;
 }
 
 .button {
@@ -1346,9 +1397,13 @@ button:hover .button-text {
 
 .zep {
   background:
-  linear-gradient(#4c3ed9, transparent), linear-gradient(to top left, #9709b5, transparent), linear-gradient(to top right, #1780b5, transparent);
+    linear-gradient(#4c3ed9, transparent), linear-gradient(to top left, #9709b5, transparent), linear-gradient(to top right, #1780b5, transparent);
   background-blend-mode: luminosity;
   position: relative;
+}
+
+.zep-wrap {
+  height: 90vh;
 }
 
 .zep .img-box {
@@ -1377,7 +1432,7 @@ button:hover .button-text {
     font-size: 2rem;
   }
 
-  .main .txt-box h4,
+  .main .txt-box p,
   .main .txt-box strong {
     font-size: 2.4rem;
   }
@@ -1503,8 +1558,12 @@ button:hover .button-text {
     font-size: 3.8rem;
   }
 
+  .web .overview {
+    width: 50%;
+  }
+
   .neo-txt-box {
-    width: 40%;
+    padding-top: 100px;
   }
 
 
@@ -1551,10 +1610,6 @@ button:hover .button-text {
     height: 47vh;
   }
 
-  .zinus-txt-box {
-    width: 30%;
-  }
-
   .web .zinus .img-box {
     background: url(../img/zinus_bg.png)no-repeat center top / cover;
     height: 530px;
@@ -1585,12 +1640,12 @@ button:hover .button-text {
     font-size: 2.2rem;
   }
 
-  .web .overview p {
-    font-size: 1.6rem;
-  }
-
   .web .tit p {
     font-size: 1.2rem;
+  }
+
+  .zep .inner{
+    padding: 0 100px;
   }
 
 
@@ -1603,7 +1658,7 @@ button:hover .button-text {
     font-size: 2.4rem;
   }
 
-  .main .txt-box h4,
+  .main .txt-box p,
   .main .txt-box strong {
     font-size: 2.8rem;
   }
@@ -1651,24 +1706,54 @@ button:hover .button-text {
     height: 680px;
   }
 
-  .neo-wrap {
-    display: flex;
-    justify-content: end;
-    height: 87vh;
-    align-items: center;
+  .web .zinus .overview {
+    width: 50%;
   }
 
-  .neo-txt-box {
-    width: 30%;
-  }
+
 
   .web .overview {
-    padding: 50px 0 100px;
+    padding: 100px 0 100px;
   }
 
   .web .img-box02 {
     height: 62vh;
   }
+
+  .zep .img-box {
+    background: url(../img/zep_bg.png) no-repeat center / 100%;
+    height: 55vh;
+    width: 30%;
+    position: absolute;
+    top: 155px;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+
+
+
+}
+
+@media (min-width: 1200px) {
+  .neo-wrap {
+    height: 87vh;
+    margin-left: 67%;
+  }
+
+  .web .overview {
+    width: 100%;
+  }
+
+  .web .zinus .overview {
+    width: 30%;
+  }
+
+  .web .zep .overview {
+    width: 50%;
+}
+
+
 
 
 }
@@ -1686,6 +1771,14 @@ button:hover .button-text {
     padding: 100px 40px;
   }
 
+  .neo-wrap {
+    margin-left: 70%;
+  }
+
+  .web .overview {
+    width: 80%;
+  }
+
   .web .zinus .img-box {
     background: url(../img/zinus_bg.png) no-repeat center / cover;
     height: 90vh;
@@ -1699,7 +1792,7 @@ button:hover .button-text {
   }
 
   .neo-txt-box {
-    width: 28%;
+    padding-top: 40px;
   }
 
   .web .tit h3 {
@@ -1722,14 +1815,6 @@ button:hover .button-text {
     font-size: 3.2rem;
   }
 
-  .web .neopharm .inner {
-    margin: 0 200px;
-  }
-
-  .zinus-txt-box {
-    width: 25%;
-  }
-
   .zinus-wrap {
     height: 90vh;
   }
@@ -1737,6 +1822,10 @@ button:hover .button-text {
   .web .img-box02 {
     height: 82vh;
   }
+
+  .web .zep .overview {
+    width: 30%;
+}
 
 
 

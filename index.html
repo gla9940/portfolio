@@ -11,7 +11,7 @@
   <!--css-->
   <link rel="stylesheet" href="css/import.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
 
 
   <!--js-->
@@ -21,6 +21,9 @@
 </head>
 
 <body>
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
   <div id="wrap">
     <header id="header">
       <div class="inner">
@@ -203,11 +206,6 @@
           <h2>01</h2>
           <p>WEB DESIGN</p>
         </div><!--web-tit-->
-        <div class="port-tit">
-          <h3>POTRFOLIO</h3>
-          <div class="line"></div>
-          <p>WEB DESIGN</p>
-        </div><!--tit-->
         <div class="neopharm">
           <div class="img-box"></div>
           <div class="txt-box">
@@ -221,7 +219,7 @@
                 <div class="neo-txt-box">
                   <div class="overview">
                     <span>Overview</span>
-                    <p>네오팜은 화장품 제조업체로 민감피부 스킨케어 전문브랜드입니다. 네오팜의 웹페이지는 디자인요소가 다소 부족해 보이는 심플하고 단순한 구조로 되어있으며, 레이아웃 시스템이
+                    <p class="font-size-14">네오팜은 화장품 제조업체로 민감피부 스킨케어 전문브랜드 입니다. 네오팜의 웹페이지는 디자인요소가 다소 부족해 보이는 심플하고 단순한 구조로 되어있으며, 레이아웃 시스템이
                       단조로운
                       느낌을 주고
                       있습니다. 이러한 단점을 분석하여 웹페이지 리뉴얼 프로젝트를 진행하였습니다.</p>
@@ -272,7 +270,7 @@
             <div class="txt-box">
               <div class="inner">
                 <div class="tit">
-                  <h3>ZINUS</h3>
+                  <h3 style="color: #807469;">ZINUS</h3>
                   <h4>웹 사이트 리뉴얼</h4>
                   <p>ZINUS Web Design Renewal</p>
                 </div><!--tit-->
@@ -280,11 +278,11 @@
                   <div class="zinus-txt-box">
                     <div class="overview">
                       <span>Overview</span>
-                      <p>지누스는 가구 및 매트리스를 판매하는 업체로 다수의 사진 작업물이 고급스럽고 깔끔한 브랜드 이미지에 맞게 심플하고 직관적인 UI를 구축하는 데에 중점을 두고 작업했습니다.
+                      <p class="font-size-14">지누스는 가구 및 매트리스를 판매하는 업체로 다수의 사진 작업물이 고급스럽고 깔끔한 브랜드 이미지에 맞게 심플하고 직관적인 UI를 구축하는 데에 중점을 두고 작업했습니다.
                         부드럽고
                         자연스러운 느낌이 날 수 있도록 작업해 고급스러운 이미지를 극대화 시켰습니다.</p>
                     </div><!--overview-->
-                    <div class="work">
+                    <div class="work font-size-14">
                       <div class="date">
                         <p>프로젝트 기간</p><span>2024.05</span>
                       </div><!--date-->
@@ -376,32 +374,25 @@
           </div><!--zep-->
         </div><!--team-project-->
       </div><!--web-->
+    
 
 
+      <div class="container slide">
+        <div class="slide-tit">
+          <p>Design</p>
+        </div>
+        <main class="sliders-container" cursor-class="arrow">
 
-<!-- <div class="container slide">  
-  <main class="sliders-container">
-      <ul class="pagination">
-          <li class="pagination__item"><a class="pagination__button"></a></li>
-          <li class="pagination__item"><a class="pagination__button"></a></li>
-          <li class="pagination__item"><a class="pagination__button"></a></li>
-          <li class="pagination__item"><a class="pagination__button"></a></li>
-      </ul>
-  </main>  
-</div>container -->
-   <!-- partial -->
-   <script src='https://rawgit.com/lmgonzalves/momentum-slider/master/dist/momentum-slider.min.js'></script>
-   <script src="js/script.js"></script>
-
-      <div class="design-wrap">
-        <div class="dim">
-          <div class="tit"><span>D</span>esign</div><!--tit-->
-          <div class="gp-design">
-            <!-- <div class="banner01"></div>
-            <div class="banner02"></div> -->
-          </div><!--gp-design-->
-        </div><!--dim-->
-      </div><!--design-wrap-->
+          <ul class="pagination">
+            <li class="pagination__item"><a class="pagination__button"></a></li>
+            <li class="pagination__item"><a class="pagination__button"></a></li>
+            <li class="pagination__item"><a class="pagination__button"></a></li>
+            <li class="pagination__item"><a class="pagination__button"></a></li>
+          </ul>
+        </main>
+      </div><!--container-->
+      <!-- partial -->
+      <script src='https://rawgit.com/lmgonzalves/momentum-slider/master/dist/momentum-slider.min.js'></script>
 
     </div><!--content-->
     <div class="modal-neo layer_pop">

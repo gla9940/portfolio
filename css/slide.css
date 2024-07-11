@@ -39,17 +39,18 @@
   left: -70px;
 }
 .ms--images .ms-slide:nth-child(1) .ms-slide__image {
-  background: url(../img/banner01.jpg) no-repeat center / 50%;
+  background: url(../img/branding_ommpaa.jpg) no-repeat center / 100%;
 }
 .ms--images .ms-slide:nth-child(2) .ms-slide__image {
-  background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/momentum-slider@3b3037f7f1bab402fe3c75cd20ab18e04e1cbe0b/portfolio-carousel/img/andre-hunter-461305-unsplash.jpg");
+  background: url(../img/banner_01.jpg) no-repeat center / 100%;
 }
 .ms--images .ms-slide:nth-child(3) .ms-slide__image {
-  background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/momentum-slider@3b3037f7f1bab402fe3c75cd20ab18e04e1cbe0b/portfolio-carousel/img/joanna-nix-389128-unsplash.jpg");
+  background: url(../img/banner_02.jpg) no-repeat center / 100%;
 }
 .ms--images .ms-slide:nth-child(4) .ms-slide__image {
-  background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/momentum-slider@3b3037f7f1bab402fe3c75cd20ab18e04e1cbe0b/portfolio-carousel/img/jurica-koletic-321003-unsplash.jpg");
+  background: url(../img/banner_03.jpg) no-repeat center / 100%;
 }
+
 .ms--images .ms-slide__image-container {
   width: 80%;
   height: 80%;
@@ -164,7 +165,12 @@
 }
 .ms--titles .ms-slide h3 {
   margin: 0;
-  text-shadow: 1px 1px 2px black;
+  font-size: 6rem;
+  display: block;
+  color: #f1ebe5; 
+  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  font-weight: bold;
+  letter-spacing: -4px;
 }
 
 .ms--links {
@@ -260,6 +266,17 @@
   opacity: 1;
 }
 
+.slide-tit{
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.slide-tit p{
+  padding-top: 100px;
+}
+
 @media screen and (max-width: 860px) {
   .ms--numbers {
     left: calc(50% - 120px);
@@ -312,6 +329,7 @@ a {
   flex-direction: column;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .container:before {
   content: "";
