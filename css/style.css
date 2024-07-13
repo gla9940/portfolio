@@ -49,7 +49,7 @@
   margin-bottom: -7px;
   /*Fix for safari gap*/
   min-height: 100px;
-  max-height: 150px;
+  max-height: 15vh;
   bottom: -95vh;
 }
 
@@ -1227,7 +1227,7 @@ button:hover .button-text {
 }
 
 .zinus-txt-box {
-  margin-top: 350px;
+  margin-top: 300px;
 }
 
 
@@ -1360,7 +1360,6 @@ button:hover .button-text {
 }
 
 .neo-wrap {
-  height: 95vh;
   padding-top: 260px;
 }
 
@@ -1392,9 +1391,6 @@ button:hover .button-text {
   position: relative;
 }
 
-.zep-wrap {
-  height: 100vh;
-}
 
 .web .zep .img-box {
   background: url(../img/zep_bg.png)no-repeat center / 100%;
@@ -1573,13 +1569,9 @@ button:hover .button-text {
   }
 
   .neo-wrap {
-    padding-top: 50px;
+    padding: 100px 0;
   }
 
-
-  .neo-wrap {
-    height: 60vh;
-  }
 
   .web .overview {
     padding: 40px 0;
@@ -1630,13 +1622,13 @@ button:hover .button-text {
   }
 
   .web .zinus .img-box {
-    background: url(../img/zinus_bg.png)no-repeat center top / 100%;
+    background: url(../img/zinus_bg.png) no-repeat center top / 90%;
     height: 530px;
     position: absolute;
     width: 100%;
-    top: 170px;
-    left: 0;
-  }
+    top: 300px;
+    left: 87px;
+}
 
   .inner {
     margin: 0 100px;
@@ -1646,13 +1638,9 @@ button:hover .button-text {
     padding-top: 100px;
   }
 
-  .zinus-wrap {
-    height: 67vh;
-  }
-
   .zinus-txt-box {
     margin-top: 0;
-    padding-top: 100px;
+    padding: 100px 0;
   }
 
   .web .overview span {
@@ -1673,13 +1661,9 @@ button:hover .button-text {
     transform: translateX(-50%);
   }
 
-  .zep .overview {
-    padding: 100px 0 50px;
-  }
-
-  .zep-wrap {
-    height: 65vh;
-  }
+.zep-txt-box {
+    padding: 100px 0;
+}
 
 
 }
@@ -1736,12 +1720,16 @@ button:hover .button-text {
   }
 
   .web .zinus .img-box {
-    height: 30vh;
+    height: 60vh;
   }
 
   .web .zinus .overview {
     width: 50%;
   }
+
+  .web .zep .img-box {
+    height: 45vh;
+}
 
 
 
