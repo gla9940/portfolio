@@ -523,6 +523,7 @@
   position: relative;
   color: #fff;
   padding: 150px 40px 170px;
+  overflow-x: hidden;
 }
 
 .index:before {
@@ -572,6 +573,7 @@
   color: #fff;
   position: relative;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .web .web-tit {
