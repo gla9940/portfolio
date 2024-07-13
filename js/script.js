@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 
   $(".modal-neo").hide();
-  $(".neopharm .img-box02").click(function () {
+  $(".learn-more.neo").click(function () {
     $(".modal-neo").show();
   })
 
@@ -23,12 +23,21 @@ $(document).ready(function () {
   })
 
   $(".modal-zinus").hide();
-  $(".zinus .img-box02").click(function () {
+  $(".learn-more.bz").click(function () {
     $(".modal-zinus").show();
   })
 
   $(".modal-zinus .close").click(function () {
     $(".modal-zinus").hide();
+  })
+
+  $(".modal-zep").hide();
+  $(".learn-more.zep02").click(function () {
+    $(".modal-zep").show();
+  })
+
+  $(".modal-zep .close").click(function () {
+    $(".modal-zep").hide();
   })
 
   /* 외부영역 클릭시 팝업 닫기 */

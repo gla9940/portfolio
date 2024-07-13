@@ -353,6 +353,7 @@
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .about .ab-02 .after:after {
@@ -575,17 +576,28 @@
 
 .web .web-tit {
   position: absolute;
+  height: 105px;
   top: 0;
   left: 0;
-  color: #fff;
-  z-index: 9;
+  color: #080808;
+  z-index: -1;
   display: flex;
   align-items: center;
+  padding-left: 50px;
+  padding-bottom: 120px;
+  box-sizing: content-box;
+}
+
+.web .neopharm .web-tit {
+  width: 100vw;
+ margin-left: calc(-50vw + 50%);
+
+  background-color: #080808;
 }
 
 .web .web-tit h2 {
   color: #2b2b2b;
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: 'Muli', 'sans-serif';
   font-weight: 900;
 }
@@ -593,6 +605,7 @@
 .web .web-tit p {
   color: #fff;
   font-size: 3rem;
+  padding-left: 10px;
 }
 
 .web .port-tit {
@@ -618,9 +631,10 @@
 
 .web .neopharm .img-box {
   width: 100%;
-  height: 455px;
-  background: url(../img/neopharm_bg.jpg)no-repeat left / cover;
+  height: 60vh;
+  background: url(../img/neopharm_bg.jpg)no-repeat center / 100%;
   position: absolute;
+  top: 67px;
 }
 
 .web .txt-box {
@@ -629,7 +643,6 @@
 }
 
 .web .neopharm .tit {
-  margin: -160px 0 410px;
   text-align: center;
 }
 
@@ -651,7 +664,7 @@
 }
 
 .web .overview {
-  padding: 80px 0 100px;
+  padding: 40px 0;
 }
 
 .web .overview .color {
@@ -662,6 +675,11 @@
   display: block;
   margin-bottom: 40px;
   font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.web .work{
+  margin-bottom: 30px;
 }
 
 .web .work>div {
@@ -671,6 +689,7 @@
 .web .work p {
   width: 120px;
   display: inline-block;
+  font-weight: 600;
 }
 
 .web .work span {
@@ -704,36 +723,6 @@
   color: #202020;
 }
 
-.web .img-box02 {
-  height: 40vh;
-}
-
-.web .img-box-wrap {
-  overflow: hidden;
-  width: 100%;
-}
-
-.web .img-box02 {
-  background: url(../img/neopharm_pop.png)no-repeat center;
-  background-size: 100%;
-  transition: background-size .3s ease;
-  cursor: pointer;
-  transition: all 0.5s;
-  position: relative;
-  transform: scale(1);
-}
-
-.web .img-box02:hover {
-  background-size: 110%;
-}
-
-.web .img-box02:hover .dim {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(20, 20, 20, 0.5);
-  transition: all 0.5s;
-}
-
 .situation {
   padding: 100px 0;
 }
@@ -745,7 +734,19 @@
 
 /*버튼 css*/
 
-.button.bz {
+.neopharm .button.before{
+  background-color: #999;
+}
+
+.zinus .button.before{
+  background-color: #999;
+}
+
+.zep .button.ppt{
+  background-color: #999;
+}
+
+.zinus .button {
   --color: #fff;
   --color-hover: var(--color);
   --background: #938578;
@@ -754,13 +755,13 @@
   --hover-front: #b99e84;
 }
 
-.button.pp {
-  --color: #202020;
+.zep .button{
+  --color: #fff;
   --color-hover: #fff;
-  --background: #fff;
+  --background: #FFC45F;
   --background-hover: var(--background);
-  --hover-back: #574fa7;
-  --hover-front: #625ab8;
+  --hover-back: #3cd5d9;
+  --hover-front: #1dc8b2;
 }
 
 .button {
@@ -882,24 +883,29 @@
 /*버튼2 CSS*/
 
 button.learn-more.bz .circle {
-  background-color: #ff8816;
+  background-color: #76857B;
 }
 
 button.learn-more.bz .button-text {
-  color: #ff8816;
+  color: #76857B;
 }
+
 
 button:hover .button-text.bz {
   color: #fff;
 }
 
-.design-system {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+button.learn-more.zep02 .circle {
+  background-color: #404040;
 }
 
+button.learn-more.zep02 .button-text {
+  color: #fff;
+}
+
+button:hover.learn-more.zep02 .button-text {
+  color: #fff;
+}
 
 .learn-more {
   position: relative;
@@ -1210,10 +1216,10 @@ button:hover .button-text {
 }
 
 .web .zinus .img-box {
-  background: url(../img/zinus_bg.png) no-repeat center / cover;
+  background: url(../img/zinus_bg.png) no-repeat center / 100%;
   height: 440px;
   position: absolute;
-  width: 115%;
+  width: 130%;
   top: 160px;
   left: -135px;
 }
@@ -1229,15 +1235,6 @@ button:hover .button-text {
 
 .web .zinus .tit h3 {
   color: #fff;
-}
-
-.web .zinus .img-box02 {
-  background: url(../img/zinus_pop.jpg)no-repeat center;
-  background-size: 100%;
-}
-
-.web .zinus .img-box02:hover {
-  background-size: 110%;
 }
 
 .zinus .asis-tobe h3 span {
@@ -1271,27 +1268,6 @@ button:hover .button-text {
 
 .zinus .color ul li:nth-child(4) {
   background-color: #555555;
-}
-
-.design-wrap {
-  background: url(../img/bg3.jpg)no-repeat center / cover;
-}
-
-.design-wrap .dim {
-  background-color: rgb(50 50 50 / 40%);
-}
-
-
-.design-wrap .tit {
-  font-size: 3.8rem;
-  color: #fff;
-  font-weight: 500;
-  text-align: center;
-  padding: 100px 0;
-}
-
-.design-wrap .tit span {
-  font-size: 5rem;
 }
 
 .gp-design .banner01 {
@@ -1382,18 +1358,34 @@ button:hover .button-text {
 }
 
 .neo-wrap {
-  height: 60vh;
+  height: 95vh;
+  padding-top: 400px;
 }
 
 .team-project {
   color: #fff;
 }
 
-.tp-tit {
-  font-size: 3rem;
-  font-weight: 400;
-  padding-top: 100px;
+/*zep 모달팝업*/
+.modal-zep {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
 }
+
+.neo-wrap {
+  height: 95vh;
+  padding-top: 400px;
+}
+
+.team-project {
+  color: #fff;
+}
+
 
 .zep {
   background:
@@ -1406,12 +1398,12 @@ button:hover .button-text {
   height: 90vh;
 }
 
-.zep .img-box {
+.web .zep .img-box {
   background: url(../img/zep_bg.png)no-repeat center / 100%;
   height: 50vh;
   width: 70%;
   position: absolute;
-  top: 330px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1422,6 +1414,20 @@ button:hover .button-text {
 
 .zep .txt-box {
   text-align: left;
+}
+
+.zep .txt-box .tit {
+  text-align: center;
+}
+
+.zep .tit h3 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.zep .web-tit h2 {
+  color: #ffffff;
 }
 
 
@@ -1522,6 +1528,7 @@ button:hover .button-text {
   .index {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
 
   .index>div {
@@ -1546,8 +1553,8 @@ button:hover .button-text {
   }
 
   .web .neopharm .img-box {
-    height: 102vh;
-    background: url(../img/neopharm_bg.jpg) no-repeat left / cover;
+    height: 100vh;
+    background: url(../img/neopharm_bg.jpg) no-repeat left / 150%
   }
 
   .web .txt-box {
@@ -1559,16 +1566,16 @@ button:hover .button-text {
   }
 
   .web .overview {
-    width: 50%;
+    width: 40%;
   }
 
-  .neo-txt-box {
-    padding-top: 100px;
+  .neo-wrap {
+    padding-top: 50px;
   }
 
 
   .neo-wrap {
-    height: 89vh;
+    height: 77vh;
   }
 
   .web .txt-box {
@@ -1577,6 +1584,7 @@ button:hover .button-text {
 
   .web .tit h3 {
     font-size: 3.6rem;
+    font-family: 600;
   }
 
   .web .neopharm .inner {
@@ -1584,8 +1592,8 @@ button:hover .button-text {
   }
 
   .web .neopharm .tit {
-    margin: 0;
     text-align: center;
+    padding-top: 100px;
   }
 
   .web .txt-box {
@@ -1606,10 +1614,6 @@ button:hover .button-text {
     width: 350px;
   }
 
-  .web .img-box02 {
-    height: 47vh;
-  }
-
   .web .zinus .img-box {
     background: url(../img/zinus_bg.png)no-repeat center top / cover;
     height: 530px;
@@ -1619,7 +1623,7 @@ button:hover .button-text {
     left: 0;
   }
 
-  .zinus .inner {
+  .inner {
     margin: 0 100px;
   }
 
@@ -1641,11 +1645,25 @@ button:hover .button-text {
   }
 
   .web .tit p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
-  .zep .inner{
-    padding: 0 100px;
+  .web .zep .img-box {
+    background: url(../img/zep_bg.png) no-repeat center / 100%;
+    height: 50vh;
+    width: 40%;
+    position: absolute;
+    top: 300px;
+    left: 75%;
+    transform: translateX(-50%);
+  }
+
+  .zep .overview {
+    padding: 100px 0 50px;
+  }
+
+  .zep-wrap {
+    height: 80vh;
   }
 
 
@@ -1703,32 +1721,13 @@ button:hover .button-text {
   }
 
   .web .zinus .img-box {
-    height: 680px;
+    height: 80vh;
   }
 
   .web .zinus .overview {
     width: 50%;
   }
 
-
-
-  .web .overview {
-    padding: 100px 0 100px;
-  }
-
-  .web .img-box02 {
-    height: 62vh;
-  }
-
-  .zep .img-box {
-    background: url(../img/zep_bg.png) no-repeat center / 100%;
-    height: 55vh;
-    width: 30%;
-    position: absolute;
-    top: 155px;
-    left: 75%;
-    transform: translateX(-50%);
-}
 
 
 
@@ -1737,7 +1736,6 @@ button:hover .button-text {
 
 @media (min-width: 1200px) {
   .neo-wrap {
-    height: 87vh;
     margin-left: 67%;
   }
 
@@ -1745,13 +1743,22 @@ button:hover .button-text {
     width: 100%;
   }
 
+  .web .neopharm .img-box {
+    height: 100vh;
+    background: url(../img/neopharm_bg.jpg) no-repeat left / 100%;
+}
+
   .web .zinus .overview {
     width: 30%;
   }
 
   .web .zep .overview {
     width: 50%;
-}
+  }
+
+  .inner {
+    margin: 0 130px;
+  }
 
 
 
@@ -1759,7 +1766,7 @@ button:hover .button-text {
 }
 
 @media (min-width: 1400px) {
-  .neopharm .inner {
+  .inner {
     margin: 0 150px;
   }
 
@@ -1773,10 +1780,11 @@ button:hover .button-text {
 
   .neo-wrap {
     margin-left: 70%;
+    padding-top: 0;
   }
 
   .web .overview {
-    width: 80%;
+    width: 77%;
   }
 
   .web .zinus .img-box {
@@ -1789,10 +1797,6 @@ button:hover .button-text {
 
   .zinus-txt-box {
     margin-bottom: 100px;
-  }
-
-  .neo-txt-box {
-    padding-top: 40px;
   }
 
   .web .tit h3 {
@@ -1819,14 +1823,23 @@ button:hover .button-text {
     height: 90vh;
   }
 
-  .web .img-box02 {
-    height: 82vh;
+  .web .zep .overview {
+    width: 35%;
   }
 
-  .web .zep .overview {
-    width: 30%;
-}
+  .web .zep .img-box {
+    background: url(../img/zep_bg.png) no-repeat center / 100%;
+    height: 60vh;
+    width: 35%;
+    position: absolute;
+    top: 300px;
+    left: 70%;
+    transform: translateX(-50%);
+  }
 
+  .zep-wrap {
+    height: 80vh;
+  }
 
 
 
