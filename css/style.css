@@ -523,7 +523,7 @@
   position: relative;
   color: #fff;
   padding: 150px 40px 170px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .index:before {
