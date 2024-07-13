@@ -573,7 +573,6 @@
   color: #fff;
   position: relative;
   width: 100%;
-  overflow-x: hidden;
 }
 
 .web .web-tit {
@@ -585,7 +584,7 @@
   z-index: -1;
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 20px;
   padding-bottom: 120px;
   box-sizing: content-box;
 }
@@ -593,20 +592,19 @@
 .web .neopharm .web-tit {
   width: 100vw;
  margin-left: calc(-50vw + 50%);
-
   background-color: #080808;
 }
 
 .web .web-tit h2 {
   color: #2b2b2b;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Muli', 'sans-serif';
   font-weight: 900;
 }
 
 .web .web-tit p {
   color: #fff;
-  font-size: 3rem;
+  font-size: 1.8rem;
   padding-left: 10px;
 }
 
@@ -628,6 +626,7 @@
 .web .neopharm {
   text-align: left;
   position: relative;
+  overflow-x: hidden;
 }
 
 
@@ -699,7 +698,7 @@
 }
 
 .web .link {
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 0 30px;
 }
 
@@ -773,7 +772,7 @@
   --background-hover: var(--background);
   --hover-back: #467281;
   --hover-front: #6fafc7;
-  padding: 8px 28px;
+  padding: 8px 18px;
   border-radius: 20px;
   line-height: 24px;
   font-size: 14px;
@@ -1361,7 +1360,7 @@ button:hover .button-text {
 
 .neo-wrap {
   height: 95vh;
-  padding-top: 400px;
+  padding-top: 260px;
 }
 
 .team-project {
@@ -1379,10 +1378,6 @@ button:hover .button-text {
   z-index: 99;
 }
 
-.neo-wrap {
-  height: 95vh;
-  padding-top: 400px;
-}
 
 .team-project {
   color: #fff;
@@ -1397,7 +1392,7 @@ button:hover .button-text {
 }
 
 .zep-wrap {
-  height: 90vh;
+  height: 100vh;
 }
 
 .web .zep .img-box {
@@ -1411,7 +1406,7 @@ button:hover .button-text {
 }
 
 .zep .overview {
-  padding: 450px 0 100px;
+  padding: 365px 0 40px;
 }
 
 .zep .txt-box {
@@ -1435,6 +1430,11 @@ button:hover .button-text {
 
 
 @media (min-width: 768px) {
+
+  .button {
+    padding: 8px 28px;
+  }
+  
 
   .main .txt-box p {
     font-size: 2rem;
@@ -1578,6 +1578,14 @@ button:hover .button-text {
 
   .neo-wrap {
     height: 77vh;
+  }
+
+  .web .web-tit h2 {
+    font-size: 4rem;
+  }
+  
+  .web .web-tit p {
+    font-size: 3rem;
   }
 
   .web .txt-box {
