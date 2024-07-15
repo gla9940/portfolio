@@ -13,32 +13,32 @@ $(document).ready(function () {
   });
 
 
-  $(".modal-neo").hide();
+  $(".layer_pop").hide();
   $(".learn-more.neo").click(function () {
     $(".modal-neo").show();
   })
 
   $(".modal-neo .close").click(function () {
-    $(".modal-neo").hide();
+    $(".layer_pop").hide();
   })
 
-  $(".modal-zinus").hide();
   $(".learn-more.bz").click(function () {
     $(".modal-zinus").show();
   })
 
   $(".modal-zinus .close").click(function () {
-    $(".modal-zinus").hide();
+    $(".layer_pop").hide();
   })
 
-  $(".modal-zep").hide();
   $(".learn-more.zep02").click(function () {
     $(".modal-zep").show();
   })
 
   $(".modal-zep .close").click(function () {
-    $(".modal-zep").hide();
+    $(".layer_pop").hide();
   })
+
+
 
   /* 외부영역 클릭시 팝업 닫기 */
   $(document).mouseup(function (e) {
@@ -260,6 +260,25 @@ $(document).ready(function () {
       cursor.classList.remove(className);
     });
   });
+
+  $(".ms-track li:nth-child(1) a").click(function () {
+    $(".modal-design01").show();
+  })
+  
+
+  $(".modal-design01 .close").click(function () {
+    $(".layer_pop").hide();
+  })
+
+  $(".modal-design02").hide();
+  $(".ms-track li:nth-child(2) a").click(function () {
+    $(".modal-design02").show();
+  })
+  
+
+  $(".modal-design02 .close").click(function () {
+    $(".layer_pop").hide();
+  })
 
 });
 

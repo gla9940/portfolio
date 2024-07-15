@@ -269,8 +269,7 @@
 .slide-tit{
   text-align: center;
   color: #fff;
-  font-size: 5rem;
-  font-weight: bold;
+  font-size: 3.2rem;
 }
 
 .slide-tit p{
@@ -351,3 +350,12 @@ a {
   justify-content: center;
   flex: 1;
 }
+
+@media screen and (min-width: 1400px){
+  .ms--images .ms-slide__image-container {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+} 

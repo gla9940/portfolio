@@ -441,7 +441,7 @@
   transform: scale(1);
 }
 
-.skill .icon:hover{
+.skill .icon:hover {
 
   background-color: #fff;
 }
@@ -598,9 +598,13 @@
   box-sizing: content-box;
 }
 
+.zep-txt-box {
+  text-align: left;
+}
+
 .web .neopharm .web-tit {
   width: 100vw;
- margin-left: calc(-50vw + 50%);
+  margin-left: calc(-50vw + 50%);
   background-color: #080808;
 }
 
@@ -673,7 +677,7 @@
 }
 
 .web .overview {
-  padding: 40px 0;
+  padding: 100px 0 40px;
 }
 
 .web .overview .color {
@@ -687,7 +691,7 @@
   font-weight: 600;
 }
 
-.web .work{
+.web .work {
   margin-bottom: 30px;
 }
 
@@ -743,15 +747,15 @@
 
 /*버튼 css*/
 
-.neopharm .button.before{
+.neopharm .button.before {
   background-color: #999;
 }
 
-.zinus .button.before{
+.zinus .button.before {
   background-color: #999;
 }
 
-.zep .button.ppt{
+.zep .button.ppt {
   background-color: #999;
 }
 
@@ -764,7 +768,16 @@
   --hover-front: #b99e84;
 }
 
-.zep .button{
+.konec .button {
+  --color: #fff;
+  --color-hover: var(--color);
+  --background: #0366A8;
+  --background-hover: var(--background);
+  --hover-back: #7288be;
+  --hover-front: #4A68B3;
+}
+
+.zep .button {
   --color: #fff;
   --color-hover: #fff;
   --background: #FFC45F;
@@ -780,7 +793,7 @@
   --background-hover: var(--background);
   --hover-back: #467281;
   --hover-front: #6fafc7;
-  padding: 8px 18px;
+  padding: 8px 20px;
   border-radius: 20px;
   line-height: 24px;
   font-size: 14px;
@@ -901,6 +914,14 @@ button.learn-more.bz .button-text {
 
 
 button:hover .button-text.bz {
+  color: #fff;
+}
+
+button.learn-more.konec02 .circle {
+  background-color: #5b5b5b;
+}
+
+button.learn-more.konec02 .button-text {
   color: #fff;
 }
 
@@ -1386,9 +1407,40 @@ button:hover .button-text {
   z-index: 99;
 }
 
+/*디자인 모달팝업*/
+
+.modal-design>div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+}
+
 
 .team-project {
   color: #fff;
+}
+
+.konec {
+  background: url(../img/konec_bg.jpg)no-repeat center /cover;
+  position: relative;
+}
+
+.web .konec .img-box {
+  background: url(../img/konec_img.jpg) no-repeat center / 100%;
+  height: 50vh;
+  width: 80%;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.konec .overview {
+  padding: 365px 0 40px;
 }
 
 
@@ -1432,6 +1484,71 @@ button:hover .button-text {
   color: #ffffff;
 }
 
+.konec .design-system button {
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+}
+
+.web .konec .link {
+  margin-top: 20px;
+}
+
+.video {
+  background-color: #202020;
+  position: relative;
+}
+
+.video video {
+  width: 80%;
+  height: 300px;
+  object-fit: fill;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+.video video[poster] {
+  width: 90%;
+  height: 300px;
+}
+
+.video .txt-box {
+  padding: 100px 0 150px;
+  position: relative;
+}
+
+.video .overview {
+  padding: 365px 0 40px;
+}
+
+.video .still-cut {
+  margin-top: 100px;
+}
+
+.video .still-cut h3 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.video .still-cut ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.video .still-cut ul li {
+  width: calc((100%) / 3);
+  height: 100px;
+}
+
+.video .still-cut ul li img {
+  width: 100%;
+}
+
 
 
 @media (min-width: 768px) {
@@ -1439,7 +1556,7 @@ button:hover .button-text {
   .button {
     padding: 8px 28px;
   }
-  
+
 
   .main .txt-box p {
     font-size: 2rem;
@@ -1560,7 +1677,7 @@ button:hover .button-text {
   }
 
   .web .neopharm .img-box {
-    height: 75vh;
+    height: 100vh;
     background: url(../img/neopharm_bg.jpg) no-repeat left / 150%
   }
 
@@ -1573,22 +1690,26 @@ button:hover .button-text {
   }
 
   .web .overview {
-    width: 50%;
+    width: 40%;
   }
 
   .neo-wrap {
     padding: 100px 0;
   }
 
+  .web .zep-txt-box {
+    text-align: left;
+  }
+
 
   .web .overview {
     padding: 40px 0;
-}
+  }
 
   .web .web-tit h2 {
     font-size: 4rem;
   }
-  
+
   .web .web-tit p {
     font-size: 3rem;
   }
@@ -1636,13 +1757,13 @@ button:hover .button-text {
     width: 100%;
     top: 300px;
     left: 87px;
-}
+  }
 
   .inner {
     margin: 0 100px;
   }
 
-  .web .zinus .tit {
+  .web .tit {
     padding-top: 100px;
   }
 
@@ -1659,19 +1780,53 @@ button:hover .button-text {
     font-size: 1.4rem;
   }
 
-  .web .zep .img-box {
-    background: url(../img/zep_bg.png) no-repeat center / 100%;
+  .web .konec .img-box {
+    background: url(../img/konec_img.jpg) no-repeat center / 100%;
     height: 50vh;
-    width: 40%;
+    width: 50%;
     position: absolute;
     top: 300px;
     left: 75%;
     transform: translateX(-50%);
   }
 
-.zep-txt-box {
+  .web .zep .img-box {
+    background: url(../img/zep_bg.png) no-repeat center / 100%;
+    height: 50vh;
+    width: 40%;
+    position: absolute;
+    top: 350px;
+    left: 75%;
+    transform: translateX(-50%);
+  }
+
+  .zep-txt-box {
     padding: 100px 0;
-}
+  }
+
+  .video .overview {
+    width: 100%;
+    padding: 365px 0 40px;
+  }
+
+  .video video {
+    width: 90%;
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  .video video[poster] {
+    width: 80%;
+    height: 400px;
+  }
+
+  .video .zep-txt-box {
+    padding: 100px 0 0;
+  }
+
+  .video .txt-box {
+    padding:0 0 150px;
+  }
 
 
 }
@@ -1732,17 +1887,36 @@ button:hover .button-text {
   }
 
   .web .zinus .overview {
-    width: 50%;
+    width: 40%;
   }
 
   .web .zep .img-box {
     height: 45vh;
+  }
+
+  .video .video-wrap {
+    position: absolute;
+    right:50px;
+    width: 50%;
+  }
+
+  .video video[poster] {
+    width: 100%;
+    height: 350px;
+  }
+
+  .video video {
+    margin-top: 160px;
 }
 
+  .video .overview {
+    padding: 0 0 40px;
+}
 
+.video .zep-txt-box {
+  width: 40%;
 
-
-
+}
 }
 
 @media (min-width: 1200px) {
@@ -1757,7 +1931,7 @@ button:hover .button-text {
   .web .neopharm .img-box {
     height: 100vh;
     background: url(../img/neopharm_bg.jpg) no-repeat left / 100%;
-}
+  }
 
   .web .zinus .overview {
     width: 30%;
@@ -1769,6 +1943,10 @@ button:hover .button-text {
 
   .inner {
     margin: 0 130px;
+  }
+
+  .konec .overview{
+    width: 40%;
   }
 
 
@@ -1791,16 +1969,17 @@ button:hover .button-text {
 
   .web .neopharm {
     height: 100vh;
-}
+  }
 
   .neo-wrap {
     margin-left: 70%;
     padding-top: 0;
   }
 
-  .web .overview {
-    width: 77%;
-  }
+  .web .neopharm .overview {
+    width: 80%;
+}
+
 
   .web .zinus .img-box {
     background: url(../img/zinus_bg.png) no-repeat center / cover;
@@ -1834,6 +2013,16 @@ button:hover .button-text {
     height: 85vh;
   }
 
+  .web .konec .img-box {
+    background: url(../img/konec_img.jpg) no-repeat center / 100%;
+    height: 60vh;
+    width: 60%;
+    position: absolute;
+    top: 300px;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+
   .web .zep .overview {
     width: 35%;
   }
@@ -1843,7 +2032,7 @@ button:hover .button-text {
     height: 60vh;
     width: 35%;
     position: absolute;
-    top: 300px;
+    top: 400px;
     left: 70%;
     transform: translateX(-50%);
   }
@@ -1851,6 +2040,29 @@ button:hover .button-text {
   .zep-wrap {
     height: 82vh;
   }
+
+  .video .txt-box {
+    padding: 0 0 300px;
+}
+
+  .video .video-wrap {
+    position: absolute;
+    right: 100px;
+    width: 50%;
+}
+
+  .video video[poster] {
+    width: 100%;
+    height: 500px;
+}
+
+  .video video {
+    margin-top: 100px;
+}
+
+.video .still-cut {
+  margin-top: 200px;
+}
 
 
 
