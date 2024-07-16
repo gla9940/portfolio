@@ -18,7 +18,7 @@ $(document).ready(function () {
     $(".modal-neo").show();
   })
 
-  $(".modal-neo .close").click(function () {
+  $(".close").click(function () {
     $(".layer_pop").hide();
   })
 
@@ -26,17 +26,16 @@ $(document).ready(function () {
     $(".modal-zinus").show();
   })
 
-  $(".modal-zinus .close").click(function () {
-    $(".layer_pop").hide();
+  $(".learn-more.konec02").click(function () {
+    $(".modal-konec").show();
   })
+
+ 
 
   $(".learn-more.zep02").click(function () {
     $(".modal-zep").show();
   })
 
-  $(".modal-zep .close").click(function () {
-    $(".layer_pop").hide();
-  })
 
 
 
@@ -270,13 +269,30 @@ $(document).ready(function () {
     $(".layer_pop").hide();
   })
 
-  $(".modal-design02").hide();
   $(".ms-track li:nth-child(2) a").click(function () {
     $(".modal-design02").show();
   })
   
 
   $(".modal-design02 .close").click(function () {
+    $(".layer_pop").hide();
+  })
+
+  $(".ms-track li:nth-child(3) a").click(function () {
+    $(".modal-design03").show();
+  })
+  
+
+  $(".modal-design03 .close").click(function () {
+    $(".layer_pop").hide();
+  })
+
+  $(".ms-track li:nth-child(4) a").click(function () {
+    $(".modal-design04").show();
+  })
+  
+
+  $(".modal-design04 .close").click(function () {
     $(".layer_pop").hide();
   })
 

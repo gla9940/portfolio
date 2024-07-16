@@ -1,12 +1,26 @@
 @charset "utf-8";
 
+/*스크롤바 css*/
 
+body::-webkit-scrollbar,.modal-content .con-img::-webkit-scrollbar {
+  width: 10px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb,.modal-content .con-img::-webkit-scrollbar-thumb {
+  height: 20%; /* 스크롤바의 길이 */
+  background: #333333; /* 스크롤바의 색상 */  
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
+  background: rgb(131, 131, 131, 0.7);  /*스크롤바 뒷 배경 색상*/
+}
 
 #wrap {
   min-width: 320px;
   font-size: 1.4rem;
   overflow: hidden;
-}
+} 
 
 #header {
   width: 100%;
@@ -331,8 +345,9 @@
 
 .about .ab-01 .pic {
   max-width: 300px;
-  height: 250px;
-  background-color: #eaeaea;
+  height: 300px;
+  background: url(../img/profile.jpg)no-repeat center / 100%;
+  border-radius: 50% 50% 0 0 ;
   margin: 0 auto;
 }
 
@@ -418,7 +433,7 @@
 .skill .design-con,
 .skill .web-con,
 .skill .subtool-con {
-  padding: 80px 40px;
+  padding: 70px 40px;
 }
 
 .skill .design-con p,
@@ -573,7 +588,7 @@
 }
 
 .index .index-box02 li:not(:first-of-type) {
-  margin-left: 40px;
+  margin-left: 60px;
   padding: 10px 0;
 }
 
@@ -589,8 +604,7 @@
   height: 105px;
   top: 0;
   left: 0;
-  color: #080808;
-  z-index: -1;
+  color: #ccc;
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -609,14 +623,12 @@
 }
 
 .web .web-tit h2 {
-  color: #2b2b2b;
   font-size: 3rem;
   font-family: 'Muli', 'sans-serif';
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .web .web-tit p {
-  color: #fff;
   font-size: 1.8rem;
   padding-left: 10px;
 }
@@ -657,6 +669,8 @@
 
 .web .neopharm .tit {
   text-align: center;
+  position: relative;
+  z-index: 5;
 }
 
 
@@ -1343,7 +1357,7 @@ button:hover .button-text {
 .modal-content .con-img {
   width: 100%;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .modal-content .con-img img {
@@ -1394,6 +1408,17 @@ button:hover .button-text {
 
 .team-project {
   color: #fff;
+}
+
+/*konec 모달팝업*/
+.modal-konec {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
 }
 
 /*zep 모달팝업*/
@@ -1549,6 +1574,15 @@ button:hover .button-text {
   width: 100%;
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #666;
+  padding: 30px 15px;
+  color: #999;
+  background-color: #202020;
+}
+
 
 
 @media (min-width: 768px) {
@@ -1584,13 +1618,6 @@ button:hover .button-text {
   .about .ab-01 {
     margin-top: 100px;
     width: 50%;
-  }
-
-  .about .ab-01 .pic {
-    max-width: 350px;
-    height: 300px;
-    background-color: #eaeaea;
-    margin: 0 auto;
   }
 
   .about .ab-01 p {
@@ -1707,11 +1734,11 @@ button:hover .button-text {
   }
 
   .web .web-tit h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .web .web-tit p {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   .web .txt-box {
@@ -1719,7 +1746,7 @@ button:hover .button-text {
   }
 
   .web .tit h3 {
-    font-size: 3.6rem;
+    font-size: 3rem;
     font-family: 600;
   }
 
@@ -1852,9 +1879,9 @@ button:hover .button-text {
   }
 
   .about .ab-01 .pic {
-    max-width: 500px;
-    height: 400px;
-  }
+    max-width: 350px;
+    height: 350px;
+}
 
   .about .ab-01-txt {
     max-width: 350px;
@@ -1925,7 +1952,7 @@ button:hover .button-text {
   }
 
   .web .overview {
-    width: 100%;
+    width: 85%;
   }
 
   .web .neopharm .img-box {
