@@ -794,7 +794,7 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 .zep .button {
   --color: #fff;
   --color-hover: #fff;
-  --background: #FFC45F;
+  --background: #f0b652;
   --background-hover: var(--background);
   --hover-back: #3cd5d9;
   --hover-front: #1dc8b2;
