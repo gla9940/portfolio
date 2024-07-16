@@ -1861,6 +1861,25 @@ footer {
 
 @media (min-width: 1024px) {
 
+  #header nav {
+    display: block;
+}
+
+#header h1{
+  float: left;
+}
+
+#header nav ul{
+  display: flex;
+  gap: 100px;
+  float: right;
+}
+
+#header nav ul li a{
+  display: block;
+  font-size: 1.8rem;
+}
+
   .main .txt-box p {
     font-size: 2.4rem;
   }
@@ -1906,7 +1925,7 @@ footer {
   }
 
   .skill .design-con {
-    padding: 80px 40px;
+    padding: 70px 40px;
   }
 
   .web .zinus .img-box {
@@ -1952,7 +1971,7 @@ footer {
   }
 
   .web .overview {
-    width: 85%;
+    width: 80%;
   }
 
   .web .neopharm .img-box {
@@ -1965,7 +1984,7 @@ footer {
   }
 
   .web .zep .overview {
-    width: 50%;
+    width: 30%;
   }
 
   .inner {
@@ -1973,7 +1992,7 @@ footer {
   }
 
   .konec .overview{
-    width: 40%;
+    width: 30%;
   }
 
 
@@ -1982,7 +2001,7 @@ footer {
 }
 
 @media (min-width: 1400px) {
-  .inner {
+  .inner {  
     margin: 0 150px;
   }
 
@@ -1990,7 +2009,7 @@ footer {
     width: 1000px;
   }
 
-  .skill .design-con {
+  .skill .design-con, .skill .web-con, .skill .subtool-con{
     padding: 100px 40px;
   }
 
@@ -2050,9 +2069,6 @@ footer {
     transform: translateX(-50%);
   }
 
-  .web .zep .overview {
-    width: 35%;
-  }
 
   .web .zep .img-box {
     background: url(../img/zep_bg.png) no-repeat center / 100%;
