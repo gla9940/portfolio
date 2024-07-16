@@ -52,7 +52,7 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 }
 
 
-#header nav {
+#header .gnb {
   display: none;
 }
 
@@ -1861,7 +1861,7 @@ footer {
 
 @media (min-width: 1024px) {
 
-  #header nav {
+  #header .gnb {
     display: block;
 }
 
@@ -1869,13 +1869,13 @@ footer {
   float: left;
 }
 
-#header nav ul{
+#header .gnb nav ul{
   display: flex;
   gap: 100px;
   float: right;
 }
 
-#header nav ul li a{
+#header .gnb nav ul li a{
   display: block;
   font-size: 1.8rem;
 }

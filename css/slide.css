@@ -227,8 +227,8 @@
 .pagination {
   display: flex;
   position: absolute;
-  left: calc(50% - 420px);
-  top: calc(100%);
+  left: calc(50% - 290px);
+  top: calc(80%);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -238,7 +238,7 @@
 .pagination__button {
   display: inline-block;
   position: relative;
-  width: 36px;
+  width: 50px;
   height: 20px;
   margin: 0 5px;
   cursor: pointer;
@@ -252,14 +252,17 @@
   box-shadow: 0 1px 0 #0B0D14;
 }
 .pagination__button:before {
-  height: 2px;
-  background-color: #6A3836;
+  height: 4px;
+  background-color: #666;
+  border-radius: 10px;
 }
 .pagination__button:after {
-  height: 3px;
-  background-color: #DC4540;
+  height: 5px;
+  background-color: #E0954B;
   opacity: 0;
   transition: 0.5s opacity;
+  border-radius: 10px;
+  top: 40%;
 }
 
 .pagination__item--active .pagination__button:after {
@@ -294,7 +297,7 @@
 
   .pagination {
     left: 50%;
-    top: calc(100% - 50px);
+    top: calc(100% - 150px);
     transform: translateX(-50%);
   }
 }
