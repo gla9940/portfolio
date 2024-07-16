@@ -1583,6 +1583,10 @@ footer {
   background-color: #202020;
 }
 
+footer .copyright{
+  margin-top: 10px;
+}
+
 
 
 @media (min-width: 768px) {
