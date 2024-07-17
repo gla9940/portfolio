@@ -1540,7 +1540,7 @@ button:hover .button-text {
 }
 
 .video .txt-box {
-  padding: 100px 0 150px;
+  padding: 100px 0;
   position: relative;
 }
 
@@ -2089,7 +2089,7 @@ footer .copyright{
   }
 
   .video .txt-box {
-    padding: 0 0 300px;
+    padding: 0 0 350px;
 }
 
   .video .video-wrap {
