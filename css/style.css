@@ -773,6 +773,10 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
   background-color: #999;
 }
 
+.konec .button.ppt {
+  background-color: #999;
+}
+
 .zinus .button {
   --color: #fff;
   --color-hover: var(--color);
