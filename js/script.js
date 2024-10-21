@@ -30,7 +30,7 @@ $(document).ready(function () {
     $(".modal-konec").show();
   })
 
- 
+
 
   $(".learn-more.zep02").click(function () {
     $(".modal-zep").show();
@@ -144,7 +144,7 @@ $(document).ready(function () {
     cssClass: 'ms--links',
     range: [0, 3],
     rangeContent: function () {
-      return '<a class="ms-slide__link">View More</a>';
+      return '<a class="ms-slide__link">More</a>';
     },
     vertical: true,
     interactive: false
@@ -192,23 +192,23 @@ $(document).ready(function () {
 
   const cursor = document.querySelector('#cursor');
   const cursorCircle = cursor.querySelector('.cursor__circle');
-  
+
   const mouse = { x: -100, y: -100 }; // mouse pointer's coordinates
   const pos = { x: 0, y: 0 }; // cursor's coordinates
   const speed = 0.1; // between 0 and 1
-  
+
   const updateCoordinates = e => {
     mouse.x = e.clientX;
     mouse.y = e.clientY;
   }
-  
+
   window.addEventListener('mousemove', updateCoordinates);
-  
-  
+
+
   function getAngle(diffX, diffY) {
     return Math.atan2(diffY, diffX) * 180 / Math.PI;
   }
-  
+
   function getSqueeze(diffX, diffY) {
     const distance = Math.sqrt(
       Math.pow(diffX, 2) + Math.pow(diffY, 2)
@@ -217,84 +217,123 @@ $(document).ready(function () {
     const accelerator = 1500;
     return Math.min(distance / accelerator, maxSqueeze);
   }
-  
+
   //마우스 오버
   const updateCursor = () => {
     const diffX = Math.round(mouse.x - pos.x);
     const diffY = Math.round(mouse.y - pos.y);
-    
+
     pos.x += diffX * speed;
     pos.y += diffY * speed;
-    
+
     const angle = getAngle(diffX, diffY);
     const squeeze = getSqueeze(diffX, diffY);
-    
-    const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
-    const rotate = 'rotate(' + angle +'deg)';
+
+    const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) + ')';
+    const rotate = 'rotate(' + angle + 'deg)';
     const translate = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
-  
+
     cursor.style.transform = translate;
     cursorCircle.style.transform = rotate + scale;
   };
-  
+
   function loop() {
     updateCursor();
     requestAnimationFrame(loop);
   }
-  
+
   requestAnimationFrame(loop);
-  
-  
-  
+
+
+
   const cursorModifiers = document.querySelectorAll('[cursor-class]');
-  
+
   cursorModifiers.forEach(curosrModifier => {
-    curosrModifier.addEventListener('mouseenter', function() {
+    curosrModifier.addEventListener('mouseenter', function () {
       const className = this.getAttribute('cursor-class');
       cursor.classList.add(className);
     });
-    
-    curosrModifier.addEventListener('mouseleave', function() {
+
+    curosrModifier.addEventListener('mouseleave', function () {
       const className = this.getAttribute('cursor-class');
       cursor.classList.remove(className);
     });
   });
 
-  $(".ms-track li:nth-child(1) a").click(function () {
+  $(".ms-track li:nth-child(1) a, .ms-slide:nth-child(1) .ms-slide__image").click(function () {
     $(".modal-design01").show();
   })
-  
+
 
   $(".modal-design01 .close").click(function () {
     $(".layer_pop").hide();
   })
 
-  $(".ms-track li:nth-child(2) a").click(function () {
+  $(".ms-track li:nth-child(2) a, .ms-slide:nth-child(2) .ms-slide__image").click(function () {
     $(".modal-design02").show();
   })
-  
+
 
   $(".modal-design02 .close").click(function () {
     $(".layer_pop").hide();
   })
 
-  $(".ms-track li:nth-child(3) a").click(function () {
+  $(".ms-track li:nth-child(3) a, .ms-slide:nth-child(3) .ms-slide__image").click(function () {
     $(".modal-design03").show();
   })
-  
+
 
   $(".modal-design03 .close").click(function () {
     $(".layer_pop").hide();
   })
 
-  $(".ms-track li:nth-child(4) a").click(function () {
+  $(".ms-track li:nth-child(4) a, .ms-slide:nth-child(4) .ms-slide__image").click(function () {
     $(".modal-design04").show();
   })
-  
+
 
   $(".modal-design04 .close").click(function () {
     $(".layer_pop").hide();
   })
+
+  // Drag&Drop Click event 해제
+
+  function blockWhileDragging(isDragging) {
+    let slides = document.getElementsByClassName("ms--images");
+
+    if (isDragging) {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add("is-dragging"); // is-dragging 클래스 추가
+      }
+    } else {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("is-dragging"); // is-dragging 클래스 제거
+      }
+    }
+  }
+
+  // mousedown 여부를 판단할 변수
+  let isMouseDown = false;
+
+  // mousedown 이벤트에서 isMouseDown을 true로 변환
+  document.addEventListener("mousedown", () => {
+    isMouseDown = true;
+  });
+
+  // mousemove 이벤트에서 isMouseDown을 판단해 blockWhileDragging 함수 실행
+  document.addEventListener("mousemove", () => {
+    if (isMouseDown) {
+      blockWhileDragging(true);
+    } else {
+      blockWhileDragging(false);
+    }
+  });
+
+  // mouseup 이벤트에서 mousedown 이전 상태로 초기화
+  document.addEventListener("mouseup", () => {
+    isMouseDown = false;
+    blockWhileDragging(false);
+  });
 
 });
 
