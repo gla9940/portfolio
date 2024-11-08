@@ -295,7 +295,6 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
   line-height: 1.5; 
   border-right: 1px solid #222; 
   padding-right: 3.5px; 
-  white-space: wrap;
   box-sizing: border-box; 
   animation: cursor 0.7s infinite;
 }

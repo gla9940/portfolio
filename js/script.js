@@ -79,7 +79,7 @@ String.prototype.toKorChars = function() {
     var imax = typeing1.length;
  
     //setInterval을 이용해 반복적으로 출력 
-    var inter = setInterval(typi,100);
+    var inter = setInterval(typi,120);
  
  
     function typi(){
