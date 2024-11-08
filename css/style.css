@@ -237,7 +237,6 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 }
 
 .main .txt-box {
-  width: 100%;
   text-align: center;
   position: fixed;
   top: 50%;
@@ -271,7 +270,7 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 }
 
 .typing {
-  width: 35ch;
+  width: 35ch !important;
   animation: typing 3s steps(30), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
