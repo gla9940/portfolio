@@ -270,7 +270,7 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 }
 
 .typing {
-  width: 35ch !important;
+  width: 35ch;
   animation: typing 3s steps(30), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
