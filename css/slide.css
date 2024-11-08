@@ -500,4 +500,10 @@ a {
 .pagination {
   top: calc(100% - 150px);
 }
+
+.ms--links {
+  left: calc(50% - 430px);
+  top: calc(50% + 130px);
 } 
+
+}
