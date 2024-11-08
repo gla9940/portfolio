@@ -293,17 +293,17 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 .result{ 
   display: inline-block; 
   line-height: 1.8; 
-  border-right: 1px solid #000; 
+  border-right: 1px solid #222; 
   padding-right: 2px; 
   white-space: wrap;
   box-sizing: border-box; 
-  animation: cursor 0.6s infinite;
+  animation: cursor 0.7s infinite;
 }
 
  @keyframes cursor{ 
-   0%{border-right: 1px solid #fff} 
-   50%{border-right: 1px solid #000} 
-   100%{border-right: 1px solid #fff} 
+   0%{border-right: 1px solid #eee} 
+   50%{border-right: 1px solid #222} 
+   100%{border-right: 1px solid #eee} 
 }
 
 /* .main .txt-box span {
