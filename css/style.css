@@ -238,11 +238,12 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 
 .main .txt-box {
   width: 80%;
-  text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
 }
 
 .main .txt-box .intro {
@@ -259,7 +260,7 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 
 .main .txt-box strong,
 .main .txt-box p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #fff;
   line-height: 2;
