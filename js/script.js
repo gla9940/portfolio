@@ -59,17 +59,17 @@ String.prototype.toKorChars = function() {
  
  
  //타이핑할 문장
-    var result  = "웹 디자이너 한경현입니다.";
+    var typing  = "웹 디자이너 한경현입니다.";
     var typeing1=[];
-    result = result.split(''); // 한글자씩자름
+    typing = typing.split(''); // 한글자씩자름
  
     //각글자 초성,중성,종성으로 나눔
-    for(var i =0; i<result.length; i++){
-      typeing1[i]=result[i].toKorChars();
+    for(var i =0; i<typing.length; i++){
+      typeing1[i]=typing[i].toKorChars();
     }
  
     //출력할 엘리먼트요소 가져옴 
-    var resultDiv = document.getElementsByClassName("result")[0];
+    var typingDiv = document.getElementsByClassName("typing")[0];
  
     var text = "";
     var i=0; 
@@ -87,7 +87,7 @@ String.prototype.toKorChars = function() {
       if(i<=imax-1){
         //각 글자가 초성 중성 종성 순서대로 추가되도록 
         var jmax = typeing1[i].length;
-        resultDiv.innerHTML = text + typeing1[i][j];
+        typingDiv.innerHTML = text + typeing1[i][j];
         j++;
         if(j==jmax){
           text+=typeing1[i][j-1];
