@@ -237,7 +237,7 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
 }
 
 .main .txt-box {
-  width: 80%;
+  width: 100%;
   text-align: center;
   position: fixed;
   top: 50%;
