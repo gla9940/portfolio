@@ -269,7 +269,7 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
   display: inline-block;
 }
 
-.typing {
+/* .typing {
   width: 35ch;
   animation: typing 3s steps(30), blink .5s step-end infinite alternate;
   white-space: nowrap;
@@ -288,11 +288,27 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
   50% {
     border-color: transparent;
   }
+} */
+
+.result{ 
+  display: inline-block; 
+  line-height: 1.8; 
+  border-right: 1px solid #000; 
+  padding-right: 2px; 
+  white-space: wrap;
+  box-sizing: border-box; 
+  animation: cursor 0.6s infinite;
 }
 
-.main .txt-box span {
-  color: #E0954B;
+ @keyframes cursor{ 
+   0%{border-right: 1px solid #fff} 
+   50%{border-right: 1px solid #000} 
+   100%{border-right: 1px solid #fff} 
 }
+
+/* .main .txt-box span {
+  color: #E0954B;
+} */
 
 .content {
   position: relative;
