@@ -306,9 +306,9 @@ body::-webkit-scrollbar-track,.modal-content .con-img::-webkit-scrollbar-track {
    100%{border-right: 1px solid #eee} 
 }
 
-/* .main .txt-box span {
+.main .txt-box span {
   color: #E0954B;
-} */
+}
 
 .content {
   position: relative;
